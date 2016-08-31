@@ -44,6 +44,7 @@ public class StopList
 		HashSet<String> stopWords = new HashSet<String>();
 		try
 		{
+
 			BufferedReader inStream = new BufferedReader(new FileReader(AML.getInstance().getPath() + FILE));
 			String line;
 			while((line = inStream.readLine()) != null)

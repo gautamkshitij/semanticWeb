@@ -1,0 +1,56 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:seals="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#"
+    xmlns:dc="http://purl.org/dc/terms/" > 
+    
+
+	<!-- MATCHING PROBLEMS -->
+	
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/SabineDataLinking">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#Suite"/>
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/SabineDataLinking#sabine-linking"/>		
+	</rdf:Description>
+
+	
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/SabineDataLinking#sabine-linking">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/SabineDataLinking#sabine-source"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/SabineDataLinking#sabine-target"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/SabineDataLinking#sabine-reference"/>
+		<dc:identifier>sabine-linking</dc:identifier>
+	</rdf:Description>
+
+
+
+	<!-- ONTOLOGIES -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/SabineDataLinking#sabine-source">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>source</seals:hasComponentType>
+		<seals:isLocatedAt>sabine_source.owl</seals:isLocatedAt>
+		<dc:identifier>sabine-source</dc:identifier>
+	</rdf:Description>
+
+	
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/SabineDataLinking#sabine-target">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>target</seals:hasComponentType>
+		<seals:isLocatedAt>sabine_target.owl</seals:isLocatedAt>
+		<dc:identifier>sabine-target</dc:identifier>
+	</rdf:Description>
+	
+	
+	
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/SabineDataLinking#sabine-reference">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>reference</seals:hasComponentType>
+		<seals:isLocatedAt>refalign.rdf</seals:isLocatedAt>
+		<dc:identifier>sabine-reference</dc:identifier>
+	</rdf:Description>
+
+
+</rdf:RDF>

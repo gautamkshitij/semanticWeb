@@ -306,7 +306,7 @@ public class AML
 		}
 		else
 			evaluation = "Precision\tRecall\tF-measure\tFound\tCorrect\tReference\n" + prc +
-					"\t" + rec + "\t" + fms + "\t" + found + "\t" + correct + "\t" + total;
+					"\t\t" + rec + "\t" + fms + "\t\t" + found + "\t\t" + correct + "\t\t" + total;
 	}
 	
     /**

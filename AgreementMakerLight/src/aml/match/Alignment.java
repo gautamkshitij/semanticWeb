@@ -66,7 +66,7 @@ public class Alignment implements Collection<Mapping>
 	private Ontology target;
 	//Link to the URIMap
 	private URIMap uris;
-	
+
 //Constructors
 
 	/**
@@ -97,7 +97,7 @@ public class Alignment implements Collection<Mapping>
 		else
 			throw new Exception("Unrecognized alignment format!");
 	}
-	
+
 	/**
 	 * Creates a new Alignment that contains the input collection of mappings
 	 * @param a: the collection of mappings to include in this Alignment
@@ -107,7 +107,7 @@ public class Alignment implements Collection<Mapping>
 		this();
 		addAll(a);
 	}
-	
+
 //Public Methods
 
 	/**
@@ -122,7 +122,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		add(sourceId,targetId,sim,MappingRelation.EQUIVALENCE);
 	}
-	
+
 	/**
 	 * Adds a new Mapping to the Alignment if it is non-redundant
 	 * Otherwise, updates the similarity of the already present Mapping
@@ -139,7 +139,7 @@ public class Alignment implements Collection<Mapping>
 		//shouldn't map with other entities in either ontology)
 		if(source.contains(targetId) || target.contains(sourceId))
 			return false;
-		
+
 		//Construct the Mapping
 		Mapping m = new Mapping(sourceId, targetId, sim, r);
 		//If it isn't listed yet, add it
@@ -168,7 +168,7 @@ public class Alignment implements Collection<Mapping>
 			return check;
 		}
 	}
-	
+
 	/**
 	 * Adds a new Mapping to the Alignment if it is non-redundant
 	 * Otherwise, updates the similarity of the already present Mapping
@@ -186,7 +186,7 @@ public class Alignment implements Collection<Mapping>
 		//shouldn't map with other entities in either ontology)
 		if(source.contains(targetId) || target.contains(sourceId))
 			return false;
-		
+
 		//Construct the Mapping
 		Mapping m = new Mapping(sourceId, targetId, sim, r);
 		m.setStatus(s);
@@ -221,7 +221,7 @@ public class Alignment implements Collection<Mapping>
 			return check;
 		}
 	}
-	
+
 	/**
 	 * Adds a new Mapping to the Alignment if it is non-redundant
 	 * Otherwise, updates the similarity of the already present Mapping
@@ -234,7 +234,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		return add(sourceURI,targetURI,sim,MappingRelation.EQUIVALENCE,MappingStatus.UNKNOWN);
 	}
-	
+
 	/**
 	 * Adds a new Mapping to the Alignment if it is non-redundant
 	 * Otherwise, updates the similarity of the already present Mapping
@@ -257,7 +257,7 @@ public class Alignment implements Collection<Mapping>
 			return add(id2,id1,sim,r,s);
 		return false;
 	}
-	
+
 	@Override
 	public boolean add(Mapping m)
 	{
@@ -271,7 +271,7 @@ public class Alignment implements Collection<Mapping>
 		//shouldn't map with other entities in either ontology)
 		if(source.contains(targetId) || target.contains(sourceId))
 			return false;
-		
+
 		//If it isn't listed yet, add it
 		if(!sourceMaps.contains(sourceId,targetId))
 		{
@@ -307,7 +307,7 @@ public class Alignment implements Collection<Mapping>
 			check = add(m) || check;
 		return check;
 	}
-	
+
 	/**
 	 * Adds all Mappings in a to this Alignment as long as
 	 * they don't conflict with any Mapping in a
@@ -321,7 +321,7 @@ public class Alignment implements Collection<Mapping>
 				nonConflicting.add(m);
 		addAll(nonConflicting);
 	}
-	
+
 	/**
 	 * Adds all Mappings in a to this Alignment as long as
 	 * they don't conflict with any Mapping in a
@@ -334,26 +334,26 @@ public class Alignment implements Collection<Mapping>
 			if(!this.containsConflict(m))
 				add(m);
 	}
-	
+
 	/**
 	 * @return the average cardinality of this Alignment
 	 */
 	public double cardinality()
 	{
 		double cardinality = 0.0;
-		
+
 		Set<Integer> sources = sourceMaps.keySet();
 		for(Integer i : sources)
 			cardinality += sourceMaps.keySet(i).size();
-		
+
 		Set<Integer> targets = targetMaps.keySet();
 		for(Integer i : targets)
 			cardinality += targetMaps.keySet(i).size();
 		cardinality /= sources.size() + targets.size();
-		
-		return cardinality;		
+
+		return cardinality;
 	}
-	
+
 	/**
 	 * @param id: the index of the entity to check in the Alignment
 	 * @return the cardinality of the entity in the Alignment
@@ -366,15 +366,15 @@ public class Alignment implements Collection<Mapping>
 			return targetMaps.get(id).size();
 		return 0;
 	}
-	
+
 	@Override
 	public void clear()
 	{
 		maps = new Vector<Mapping>(0,1);
 		sourceMaps = new Table2Map<Integer,Integer,Mapping>();
-		targetMaps = new Table2Map<Integer,Integer,Mapping>();		
+		targetMaps = new Table2Map<Integer,Integer,Mapping>();
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
  	 * @param targetId: the index of the target class to check in the Alignment
@@ -394,7 +394,7 @@ public class Alignment implements Collection<Mapping>
 		return o instanceof Mapping && contains(((Mapping)o).getSourceId(),
 				((Mapping)o).getTargetId(), ((Mapping)o).getRelationship());
 	}
-	
+
 	@Override
 	public boolean containsAll(Collection<?> c)
 	{
@@ -403,10 +403,10 @@ public class Alignment implements Collection<Mapping>
 				return false;
 		return true;
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
- 	 * @param targetId: the index of the target class to check in the Alignment 
+ 	 * @param targetId: the index of the target class to check in the Alignment
 	 * @return whether the Alignment contains a Mapping that is ancestral to the given pair of classes
 	 * (i.e. includes one ancestor of sourceId and one ancestor of targetId)
 	 */
@@ -414,10 +414,10 @@ public class Alignment implements Collection<Mapping>
 	{
 		AML aml = AML.getInstance();
 		RelationshipMap rels = aml.getRelationshipMap();
-		
+
 		Set<Integer> sourceAncestors = rels.getAncestors(sourceId);
 		Set<Integer> targetAncestors = rels.getAncestors(targetId);
-		
+
 		for(Integer sa : sourceAncestors)
 		{
 			Set<Integer> over = getSourceMappings(sa);
@@ -429,7 +429,7 @@ public class Alignment implements Collection<Mapping>
 	}
 
 	/**
- 	 * @param m: the Mapping to check in the Alignment 
+ 	 * @param m: the Mapping to check in the Alignment
 	 * @return whether the Alignment contains a Mapping that conflicts with the given
 	 * Mapping and has a higher similarity
 	 */
@@ -438,7 +438,7 @@ public class Alignment implements Collection<Mapping>
 		int source = m.getSourceId();
 		int target = m.getTargetId();
 		double sim = m.getSimilarity();
-		
+
 		if(containsSource(source))
 		{
 			Set<Integer> targets = sourceMaps.keySet(source);
@@ -455,9 +455,9 @@ public class Alignment implements Collection<Mapping>
 		}
 		return false;
 	}
-	
+
 	/**
- 	 * @param classId: the index of the class to check in the Alignment 
+ 	 * @param classId: the index of the class to check in the Alignment
 	 * @return whether the Alignment contains a Mapping with that class
 	 * (either as a source or as a target class)
 	 */
@@ -465,10 +465,10 @@ public class Alignment implements Collection<Mapping>
 	{
 		return containsSource(classId) || containsTarget(classId);
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
- 	 * @param targetId: the index of the target class to check in the Alignment 
+ 	 * @param targetId: the index of the target class to check in the Alignment
 	 * @return whether the Alignment contains another Mapping for sourceId or for targetId
 	 */
 	public boolean containsConflict(int sourceId, int targetId)
@@ -481,19 +481,19 @@ public class Alignment implements Collection<Mapping>
 				return true;
 		return false;
 	}
-	
+
 	/**
- 	 * @param m: the Mapping to check in the Alignment 
+ 	 * @param m: the Mapping to check in the Alignment
 	 * @return whether the Alignment contains another Mapping involving either class in m
 	 */
 	public boolean containsConflict(Mapping m)
 	{
 		return containsConflict(m.getSourceId(),m.getTargetId());
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
- 	 * @param targetId: the index of the target class to check in the Alignment 
+ 	 * @param targetId: the index of the target class to check in the Alignment
 	 * @return whether the Alignment contains a Mapping that is descendant of the given pair of classes
 	 * (i.e. includes one descendant of sourceId and one descendant of targetId)
 	 */
@@ -501,10 +501,10 @@ public class Alignment implements Collection<Mapping>
 	{
 		AML aml = AML.getInstance();
 		RelationshipMap rels = aml.getRelationshipMap();
-		
+
 		Set<Integer> sourceDescendants = rels.getDescendants(sourceId);
 		Set<Integer> targetDescendants = rels.getDescendants(targetId);
-		
+
 		for(Integer sa : sourceDescendants)
 		{
 			Set<Integer> over = getSourceMappings(sa);
@@ -514,7 +514,7 @@ public class Alignment implements Collection<Mapping>
 		}
 		return false;
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
 	 * @param targetId: the index of the target class to check in the Alignment
@@ -524,7 +524,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		return sourceMaps.contains(sourceId, targetId);
 	}
-	
+
 	/**
 	 * @param m: the Mapping to check in the Alignment
 	 * @return whether the Alignment contains a Mapping with the same sourceId
@@ -534,7 +534,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		return sourceMaps.contains(m.getSourceId(), m.getTargetId());
 	}
-	
+
 	/**
 	 * @param lm: the List of Mapping to check in the Alignment
 	 * @return whether the Alignment contains all the Mapping listed in m
@@ -546,10 +546,10 @@ public class Alignment implements Collection<Mapping>
 				return false;
 		return true;
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
- 	 * @param targetId: the index of the target class to check in the Alignment 
+ 	 * @param targetId: the index of the target class to check in the Alignment
 	 * @return whether the Alignment contains a Mapping that is parent to the
 	 * given pair of classes on one side only
 	 */
@@ -557,10 +557,10 @@ public class Alignment implements Collection<Mapping>
 	{
 		AML aml = AML.getInstance();
 		RelationshipMap rels = aml.getRelationshipMap();
-		
+
 		Set<Integer> sourceAncestors = rels.getParents(sourceId);
 		Set<Integer> targetAncestors = rels.getParents(targetId);
-		
+
 		for(Integer sa : sourceAncestors)
 			if(containsMapping(sa,targetId))
 				return true;
@@ -569,7 +569,7 @@ public class Alignment implements Collection<Mapping>
 				return true;
 		return false;
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
  	 * @return whether the Alignment contains a Mapping for sourceId
@@ -587,7 +587,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		return targetMaps.contains(targetId);
 	}
-	
+
 	/**
  	 * @return the number of conflict mappings in this alignment
 	 */
@@ -599,9 +599,9 @@ public class Alignment implements Collection<Mapping>
 				count++;
 		return count;
 	}
-	
+
 	/**
-	 * @param a: the Alignment to subtract from this Alignment 
+	 * @param a: the Alignment to subtract from this Alignment
 	 * @return the Alignment corresponding to the difference between this Alignment and a
 	 */
 	public Alignment difference(Alignment a)
@@ -612,13 +612,13 @@ public class Alignment implements Collection<Mapping>
 				diff.add(m);
 		return diff;
 	}
-	
+
 	@Override
 	public boolean equals(Object o)
 	{
 		return o instanceof Alignment && containsAll((Alignment)o);
 	}
-	
+
 	/**
 	 * @param ref: the reference Alignment to evaluate this Alignment
 	 * @return the evaluation of this Alignment {# correct mappings, # conflict mappings}
@@ -645,7 +645,7 @@ public class Alignment implements Collection<Mapping>
 	}
 
 	/**
-	 * @param a: the base Alignment to which this Alignment will be compared 
+	 * @param a: the base Alignment to which this Alignment will be compared
 	 * @return the gain (i.e. the fraction of new Mappings) of this Alignment
 	 * in comparison with the base Alignment
 	 */
@@ -658,9 +658,9 @@ public class Alignment implements Collection<Mapping>
 		gain /= a.size();
 		return gain;
 	}
-	
+
 	/**
-	 * @param a: the base Alignment to which this Alignment will be compared 
+	 * @param a: the base Alignment to which this Alignment will be compared
 	 * @return the gain (i.e. the fraction of new Mappings) of this Alignment
 	 * in comparison with the base Alignment
 	 */
@@ -680,7 +680,7 @@ public class Alignment implements Collection<Mapping>
 		targetGain /= a.targetCount();
 		return Math.min(sourceGain, targetGain);
 	}
-	
+
 	/**
 	 * @param index: the index of the Mapping to return in the list of Mappings
  	 * @return the Mapping at the input index (note that the index will change
@@ -692,7 +692,7 @@ public class Alignment implements Collection<Mapping>
 			return null;
 		return maps.get(index);
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
 	 * @param targetId: the index of the target class to check in the Alignment
@@ -703,7 +703,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		return sourceMaps.get(sourceId, targetId);
 	}
-	
+
 	/**
 	 * @param id1: the index of the first class to check in the Alignment
 	 * @param targetId: the index of the second class to check in the Alignment
@@ -719,7 +719,7 @@ public class Alignment implements Collection<Mapping>
 		else
 			return null;
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
  	 * @return the index of the target class that best matches source
@@ -761,7 +761,7 @@ public class Alignment implements Collection<Mapping>
 		}
 		return source;
 	}
-	
+
 	/**
 	 * @param m: the Mapping to check on the Alignment
 	 * @return the list of all Mappings that have a cardinality conflict with the given Mapping
@@ -777,7 +777,7 @@ public class Alignment implements Collection<Mapping>
 				conflicts.add(sourceMaps.get(s,m.getTargetId()));
 		return conflicts;
 	}
-	
+
 	/**
 	 * @return the high level Alignment induced from this Alignment
 	 * (the similarity between high level classes is given by the
@@ -787,7 +787,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		AML aml = AML.getInstance();
 		RelationshipMap rels = aml.getRelationshipMap();
-		
+
 		Alignment a = new Alignment();
 		int total = maps.size();
 		for(Mapping m : maps)
@@ -809,7 +809,7 @@ public class Alignment implements Collection<Mapping>
 				b.add(m);
 		return b;
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class
 	 * @param targetId: the index of the target class
@@ -823,7 +823,7 @@ public class Alignment implements Collection<Mapping>
 		else
 			return -1;
 	}
-	
+
 	/**
 	 * @param id1: the index of the first class
 	 * @param id2: the index of the second class
@@ -839,7 +839,7 @@ public class Alignment implements Collection<Mapping>
 		else
 			return -1;
 	}
-	
+
 	/**
 	 * @param id: the index of the class to check in the Alignment
  	 * @return the list of all classes mapped to the given class
@@ -853,7 +853,7 @@ public class Alignment implements Collection<Mapping>
 			mappings.addAll(targetMaps.keySet(id));
 		return mappings;
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
  	 * @return the index of the target class that best matches source
@@ -887,7 +887,7 @@ public class Alignment implements Collection<Mapping>
 		}
 		return max;
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class in the Alignment
 	 * @param targetId: the index of the target class in the Alignment
@@ -900,7 +900,7 @@ public class Alignment implements Collection<Mapping>
 			return null;
 		return m.getRelationship();
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class in the Alignment
 	 * @param targetId: the index of the target class in the Alignment
@@ -913,7 +913,7 @@ public class Alignment implements Collection<Mapping>
 			return 0.0;
 		return m.getSimilarity();
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class in the Alignment
 	 * @param targetId: the index of the target class in the Alignment
@@ -926,7 +926,7 @@ public class Alignment implements Collection<Mapping>
 			return "0%";
 		return m.getSimilarityPercent();
 	}
-	
+
 	/**
 	 * @param sourceId: the index of the source class to check in the Alignment
  	 * @return the list of all target classes mapped to the source class
@@ -937,7 +937,7 @@ public class Alignment implements Collection<Mapping>
 			return sourceMaps.keySet(sourceId);
 		return new HashSet<Integer>();
 	}
-	
+
 	/**
  	 * @return the list of all source classes that have mappings
 	 */
@@ -947,7 +947,7 @@ public class Alignment implements Collection<Mapping>
 		sMaps.addAll(sourceMaps.keySet());
 		return sMaps;
 	}
-	
+
 	/**
 	 * @param targetId: the index of the target class to check in the Alignment
  	 * @return the list of all source classes mapped to the target class
@@ -958,7 +958,7 @@ public class Alignment implements Collection<Mapping>
 			return targetMaps.keySet(targetId);
 		return new HashSet<Integer>();
 	}
-	
+
 	/**
  	 * @return the list of all target classes that have mappings
 	 */
@@ -974,9 +974,9 @@ public class Alignment implements Collection<Mapping>
 	{
 		return maps.hashCode();
 	}
-	
+
 	/**
-	 * @param a: the Alignment to intersect with this Alignment 
+	 * @param a: the Alignment to intersect with this Alignment
 	 * @return the Alignment corresponding to the intersection between this Alignment and a
 	 */
 	public Alignment intersection(Alignment a)
@@ -988,19 +988,19 @@ public class Alignment implements Collection<Mapping>
 				intersection.add(m);
 		return intersection;
 	}
-	
+
 	@Override
 	public boolean isEmpty()
 	{
 		return maps.isEmpty();
 	}
-	
+
 	@Override
 	public Iterator<Mapping> iterator()
 	{
 		return maps.iterator();
 	}
-	
+
 	/**
 	 * @return the maximum cardinality of this Alignment
 	 */
@@ -1008,7 +1008,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		double cardinality;
 		double max = 0.0;
-		
+
 		Set<Integer> sources = sourceMaps.keySet();
 		for(Integer i : sources)
 		{
@@ -1023,9 +1023,9 @@ public class Alignment implements Collection<Mapping>
 			if(cardinality > max)
 				max = cardinality;
 		}
-		return max;		
+		return max;
 	}
-	
+
 	@Override
 	public boolean remove(Object o)
 	{
@@ -1042,7 +1042,7 @@ public class Alignment implements Collection<Mapping>
 		else
 			return false;
 	}
-	
+
 	/**
 	 * Removes the Mapping between the given classes from the Alignment
 	 * @param sourceId: the source class to remove from the Alignment
@@ -1053,7 +1053,7 @@ public class Alignment implements Collection<Mapping>
 		Mapping m = new Mapping(sourceId, targetId, 1.0);
 		return remove(m);
 	}
-	
+
 	@Override
 	public boolean removeAll(Collection<?> c)
 	{
@@ -1062,7 +1062,7 @@ public class Alignment implements Collection<Mapping>
 			check = remove(o) || check;
 		return check;
 	}
-	
+
 	@Override
 	public boolean retainAll(Collection<?> c)
 	{
@@ -1082,11 +1082,11 @@ public class Alignment implements Collection<Mapping>
 		AML aml = AML.getInstance();
 		String sourceURI = aml.getSource().getURI();
 		String targetURI = aml.getTarget().getURI();
-		
+
 		PrintWriter outStream = new PrintWriter(new FileOutputStream(file));
 		outStream.println("<?xml version='1.0' encoding='utf-8'?>");
-		outStream.println("<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'"); 
-		outStream.println("\t xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' "); 
+		outStream.println("<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'");
+		outStream.println("\t xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' ");
 		outStream.println("\t xmlns:xsd='http://www.w3.org/2001/XMLSchema#' ");
 		outStream.println("\t alignmentSource='AgreementMakerLight'>\n");
 		outStream.println("<Alignment>");
@@ -1104,10 +1104,10 @@ public class Alignment implements Collection<Mapping>
 		for(Mapping m : maps)
 			outStream.println(m.toRDF());
 		outStream.println("</Alignment>");
-		outStream.println("</rdf:RDF>");		
+		outStream.println("</rdf:RDF>");
 		outStream.close();
 	}
-	
+
 	/**
 	 * Saves the Alignment into a .tsv file in AML format
 	 * @param file: the output file
@@ -1137,7 +1137,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		Collections.sort(maps);
 	}
-	
+
 	/**
 	 * Sorts the Alignment descendingly
 	 */
@@ -1153,7 +1153,7 @@ public class Alignment implements Collection<Mapping>
             }
         } );
 	}
-	
+
 	/**
 	 * @return the number of source classes mapped in this Alignment
 	 */
@@ -1161,7 +1161,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		return sourceMaps.keyCount();
 	}
-	
+
 	/**
 	 * @return the fraction of source classes mapped in this Alignment
 	 */
@@ -1173,7 +1173,7 @@ public class Alignment implements Collection<Mapping>
 		coverage /= count;
 		return coverage;
 	}
-	
+
 	/**
 	 * @return the number of target classes mapped in this Alignment
 	 */
@@ -1181,7 +1181,7 @@ public class Alignment implements Collection<Mapping>
 	{
 		return targetMaps.keyCount();
 	}
-	
+
 	/**
 	 * @return the fraction of target classes mapped in this Alignment
 	 */
@@ -1193,19 +1193,19 @@ public class Alignment implements Collection<Mapping>
 		coverage /= count;
 		return coverage;
 	}
-	
+
 	@Override
 	public Object[] toArray()
 	{
 		return maps.toArray();
 	}
-	
+
 	@Override
 	public <T> T[] toArray(T[] a)
 	{
 		return maps.toArray(a);
 	}
-	
+
 //Private Methods
 
 	private void loadMappingsRDF(String file) throws DocumentException
@@ -1257,7 +1257,7 @@ public class Alignment implements Collection<Mapping>
 			add(sourceURI, targetURI, similarity, rel, st);
 		}
 	}
-	
+
 	private void loadMappingsTSV(String file) throws Exception
 	{
 		BufferedReader inStream = new BufferedReader(new FileReader(file));

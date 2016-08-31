@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/jaws.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/simmetrics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/commons-lang-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/owlapi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/dom4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/gephi-toolkit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/microsoft-translator.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/swingx-all-1.6.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AgreementMakerLight/src/lib/elk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
