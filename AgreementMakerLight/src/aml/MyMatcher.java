@@ -14,7 +14,10 @@
  *******************************************************************************
  * Test-runs AgreementMakerLight in Eclipse.                                   *
  *                                                                             *
- * @author Daniel Faria                                                        *
+ * @author Kshitij Guattam
+ * kgauta3@uic.edu
+ *
+ * [CS586: Improving the existing baseline precission and F-Score].
  ******************************************************************************/
 package aml;
 
@@ -234,6 +237,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
             if (!stopSet.contains(s))
                 n2Words.add(s);
 
+
         //Do a weighted Jaccard, where words are weighted by length
         double total = 0.0;
         for (String s : n1Words) {
@@ -281,7 +285,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
 //        Alignment thesaurusMatcher = new ThesaurusMatcher().match(EntityType.INDIVIDUAL, threshold);
 //        Alignment logicaldefinitionMatcher = new LogicalDefMatcher().match(EntityType.CLASS, threshold);
 //        Alignment background = new BackgroundKnowledgeMatcher().match(EntityType.CLASS, threshold);
-        Alignment hybridString = new HybridStringMatcher(true).match(EntityType.INDIVIDUAL, threshold);
+//        Alignment hybridString = new HybridStringMatcher(true).match(EntityType.INDIVIDUAL, threshold);
 //        Alignment lexicalMatcher = new LexicalMatcher().match(EntityType.INDIVIDUAL, threshold);
 
 
@@ -298,17 +302,24 @@ public class MyMatcher extends AbstractInstanceMatcher {
 //        combinedAlignment1 = LWC.combine(myMatcher, lexicalMatcher, 0.9); //0.8 weight to myMatcher
 //        combinedAlignment2 = LWC.combine(hybridString, spaceLexicalMatcher, 0.3);
 
+        aml.setAlignment(myMatcher);
 
-        aml.setAlignment(LWC.combine(myMatcher, hybridString, 0.5));
+//        aml.setAlignment(LWC.combine(myMatcher, hybridString, 0.5));
 
         time = (System.currentTimeMillis() - time) / 1000;
         System.out.println("Finished in " + time + " seconds");
 
+
         //Open the reference alignment and evaluate
         aml.openReferenceAlignment(referencePath);
         Alignment ref = aml.getReferenceAlignment();
+
+        myMatcher.saveRDF("./matcher.rdf");
+
+//        ref.saveRDF("./matcher.rdf");
+
         aml.evaluate();
-        System.out.println(aml.getEvaluation());
+//        System.out.println(aml.getEvaluation());
 
     }
 }

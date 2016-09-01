@@ -86,7 +86,7 @@ Combining all those Matchers
 Experiments to run: 
 
 1. use voting (with equal weights) —> taking average of all measures
-2. use vector of different similarity (slide 42)
+2. use vector of different similarity (slide 42) (Use Cosine Similarity)
 
 Experiments (Goal: Increase F-Measure)
 1. Baseline Program
