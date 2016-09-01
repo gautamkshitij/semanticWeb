@@ -18,6 +18,7 @@
  ******************************************************************************/
 package aml;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -29,6 +30,7 @@ import aml.settings.SelectionType;
 import aml.util.ISub;
 import aml.util.StopList;
 import aml.util.StringParser;
+import org.jfree.ui.Align;
 
 public class MyMatcher extends AbstractInstanceMatcher {
     //Attributes
@@ -79,12 +81,29 @@ public class MyMatcher extends AbstractInstanceMatcher {
         HashMap<String, Double> similarityMeasures = new HashMap<>();
 
         double names_Similarity = 0.0;
-        double synonym_Similarity = 0.0;
-        double acronym_Similarity = 0.0;
-        double multiword_Similarity = 0.0;
-        double commonWordsInArticles_similarity = 0.0;
-        double partOfSPeech_similarity = 0.0;
-        double definition_similarity = 0.0;
+//        double synonym_Similarity = 0.0;
+//        double acronym_Similarity = 0.0;
+//        double multiword_Similarity = 0.0;
+//        double commonWordsInArticles_similarity = 0.0;
+//        double partOfSPeech_similarity = 0.0;
+//        double definition_similarity = 0.0;
+//        double homonym_matcher = 0.0;//
+//        double similarTo_similarity = 0.0; //using this API https://www.wordsapi.com/docs#details
+//
+//        double cosine_Similarity = 0.0;
+        /*
+        * More similarities to come here
+        * https://github.com/tdebatty/java-string-similarity
+        * */
+
+        /*
+        *
+        * Check if two strings are location and calculate location similarity.
+        * // country similar, distance similar
+        *
+        *
+        * */
+
 
         for (String n1 : sLex.getNames(i1)) {
             if (n1.length() != 0 && n1 != null) {
@@ -93,6 +112,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
 
 
                         names_Similarity = Math.max(names_Similarity, nameSimilarity(n1, n2, useWordNet));
+//                        acronym_Similarity = Math.max(acronym_Similarity, acronymMatcher(n1, n2));
 
 
                     }
@@ -100,20 +120,79 @@ public class MyMatcher extends AbstractInstanceMatcher {
             }
         }
 
-        similarityMeasures.put("NamesSimilarity", names_Similarity);
-        similarityMeasures.put("synonymSimilarity", synonym_Similarity);
-        similarityMeasures.put("acronymSimilarity", acronym_Similarity);
-        similarityMeasures.put("multiwordSimilarity", multiword_Similarity);
-        similarityMeasures.put("commonWordsSimilarity", commonWordsInArticles_similarity);
+//        similarityMeasures.put("NamesSimilarity", names_Similarity);
+//        similarityMeasures.put("synonymSimilarity", synonym_Similarity);
+//        similarityMeasures.put("acronymSimilarity", acronym_Similarity);
+//        similarityMeasures.put("multiwordSimilarity", multiword_Similarity);
+//        similarityMeasures.put("commonWordsSimilarity", commonWordsInArticles_similarity);
 
-
+        // change this return value after combining
         return names_Similarity;
+    }
+
+
+    protected double multiword_similarity() {
+        return 0.0;
     }
 
     protected double acronymMatcher(String n1, String n2) {
 
+        double acronymsimilarity = 0.0;
+        String[] srcWords = n1.toLowerCase().split(" ");
 
-        return 0.0;
+        String[] tgtWords = n2.toLowerCase().split(" ");
+
+        ArrayList<String> longer = new ArrayList<String>();
+        ArrayList<String> shorter = new ArrayList<String>();
+        if (srcWords.length == tgtWords.length)
+            return 0.0;
+        boolean sourceIsLonger = srcWords.length > tgtWords.length;
+        if (sourceIsLonger) {
+            for (String word : srcWords)
+                longer.add(word);
+            for (String word : tgtWords)
+                shorter.add(word);
+        } else {
+            for (String word : srcWords)
+                shorter.add(word);
+            for (String word : tgtWords)
+                longer.add(word);
+        }
+        int total = longer.size();
+        //Check if they have shared words, and remove them
+        for (int i = 0; i < shorter.size(); i++) {
+            String word = shorter.get(i);
+            if (longer.remove(word)) {
+                shorter.remove(i--);
+                acronymsimilarity += 1.0;
+            }
+        }
+        if (shorter.size() != 1)
+            return 0.0;
+
+
+        String acronym = shorter.get(0);
+
+
+        if (acronym.length() < 2 || acronym.length() > 3 || acronym.length() != longer.size())
+            return 0.0;
+
+
+        boolean match = true;
+        for (int i = 0; i < longer.size(); i++) {
+            String word = longer.get(i);
+            match = word.startsWith(acronym.substring(i, i + 1));
+            if (match)
+                acronymsimilarity += 0.5;
+            else
+                break;
+        }
+        if (!match)
+            return 0.0;
+        acronymsimilarity /= total;
+
+        return acronymsimilarity;
+
     }
 
     protected double nameSimilarity(String n1, String n2, boolean useWordNet) {
@@ -175,6 +254,8 @@ public class MyMatcher extends AbstractInstanceMatcher {
     //Main Method
     public static void main(String[] args) throws Exception {
         //Path to input ontology files (edit manually)
+
+
         String sourcePath = "/Users/kshitijgautam/IdeaProjects/AML-Project/AgreementMakerLight/data/sabine_linking/sabine_source.owl";
         String targetPath = "/Users/kshitijgautam/IdeaProjects/AML-Project/AgreementMakerLight/data/sabine_linking/sabine_target.owl";
         String referencePath = "/Users/kshitijgautam/IdeaProjects/AML-Project/AgreementMakerLight/data/sabine_linking/refalign.rdf";
@@ -195,9 +276,30 @@ public class MyMatcher extends AbstractInstanceMatcher {
 
         //Matching Algorithm
         MyMatcher mm = new MyMatcher();
-        Alignment a = mm.match(EntityType.INDIVIDUAL, threshold);
+        Alignment myMatcher = mm.match(EntityType.INDIVIDUAL, threshold);
+//        Alignment multiWordMatcher = new MultiWordMatcher().match(EntityType.INDIVIDUAL, threshold);
+//        Alignment thesaurusMatcher = new ThesaurusMatcher().match(EntityType.INDIVIDUAL, threshold);
+//        Alignment logicaldefinitionMatcher = new LogicalDefMatcher().match(EntityType.CLASS, threshold);
+//        Alignment background = new BackgroundKnowledgeMatcher().match(EntityType.CLASS, threshold);
+        Alignment hybridString = new HybridStringMatcher(true).match(EntityType.INDIVIDUAL, threshold);
+//        Alignment lexicalMatcher = new LexicalMatcher().match(EntityType.INDIVIDUAL, threshold);
 
-        aml.setAlignment(a);
+
+//        Alignment spaceLexicalMatcher = new SpacelessLexicalMatcher().match(EntityType.INDIVIDUAL, threshold);
+
+//        Alignment valueLexiconMatcher = new Value2LexiconMatcher(true).match(EntityType.INDIVIDUAL, threshold);
+//        Alignment valueMatcher = new ValueMatcher().match(EntityType.INDIVIDUAL, threshold);
+//        Alignment valueStringMatcher = new ValueStringMatcher().match(EntityType.INDIVIDUAL, threshold);
+//        Alignment wordNetMatcher = new WordNetMatcher().match(EntityType.INDIVIDUAL, threshold);
+
+
+        // combined Alginemnt of differnet matchers, need to run experiments too
+//        Alignment combinedAlignment1, combinedAlignment2;
+//        combinedAlignment1 = LWC.combine(myMatcher, lexicalMatcher, 0.9); //0.8 weight to myMatcher
+//        combinedAlignment2 = LWC.combine(hybridString, spaceLexicalMatcher, 0.3);
+
+
+        aml.setAlignment(LWC.combine(myMatcher, hybridString, 0.5));
 
         time = (System.currentTimeMillis() - time) / 1000;
         System.out.println("Finished in " + time + " seconds");

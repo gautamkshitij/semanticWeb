@@ -46,7 +46,7 @@ public class LogicalDefMatcher implements PrimaryMatcher
 											  "definitions.";
 	private static final String NAME = "Logical Definition Matcher";
 	private static final EntityType[] SUPPORT = {EntityType.CLASS};
-	private static final String DEF_FILE = "store/knowledge/logical_definitions.txt";
+	private static final String DEF_FILE = "/Users/kshitijgautam/IdeaProjects/AML-Project/out/production/store/knowledge/logical_definitions.txt";
 	private static final String UBERON = "store/knowledge/uberon.owl";
 	private Table2Set<Integer,String> classDefs;
 	private Table2Set<String,Integer> defClasses;

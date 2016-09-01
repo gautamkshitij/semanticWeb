@@ -30,18 +30,18 @@ public class AcronymMatcher implements PrimaryMatcher
 {
 
 //Attributes
-	
+
 	private static final String DESCRIPTION = "Matches entities where the Lexicon entry of one\n" +
 											  "is an acronym of the Lexicon entry of the other\n";
 	private static final String NAME = "Acronym Matcher";
 	private static final EntityType[] SUPPORT = {EntityType.CLASS,EntityType.INDIVIDUAL,EntityType.DATA,EntityType.OBJECT};
-			
+
 //Constructors
 
 	public AcronymMatcher(){}
-	
+
 //Public Methods
-	
+
 	@Override
 	public String getDescription()
 	{
@@ -59,7 +59,7 @@ public class AcronymMatcher implements PrimaryMatcher
 	{
 		return SUPPORT;
 	}
-	
+
 	@Override
 	public Alignment match(EntityType e, double thresh) throws UnsupportedEntityTypeException
 	{
@@ -67,7 +67,7 @@ public class AcronymMatcher implements PrimaryMatcher
 		AML aml = AML.getInstance();
 		Lexicon sourceLex = aml.getSource().getLexicon();
 		Lexicon targetLex = aml.getTarget().getLexicon();
-		
+
 		Alignment maps = new Alignment();
 
 		for(String sName : sourceLex.getNames(e))
@@ -137,16 +137,16 @@ public class AcronymMatcher implements PrimaryMatcher
 				if(sim >= thresh)
 					for(int sourceId : sourceLex.getEntities(e,sName))
 						for(int targetId : targetLex.getEntities(e,tName))
-							maps.add(sourceId, targetId, sim * 
+							maps.add(sourceId, targetId, sim *
 								Math.sqrt(sourceLex.getCorrectedWeight(sName, sourceId) *
 									targetLex.getCorrectedWeight(tName, targetId)));
 			}
 		}
 		return maps;
 	}
-	
+
 //Private Methods
-	
+
 	private void checkEntityType(EntityType e) throws UnsupportedEntityTypeException
 	{
 		boolean check = false;

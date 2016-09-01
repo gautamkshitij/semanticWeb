@@ -6,7 +6,6 @@ The given is the baseline --> improve it by adding more things
 
 
 
-
 My Strategy (Considering)
 1. Matchers
 1.1 Synonym Matching
@@ -24,6 +23,61 @@ Preprocessing
 1. Stemming
 2. Replace with correct spelling
 3. 
+
+
+Individual Matchers
+Baseline Program
+	Precision	Recall	F-measure	Found	Correct	 Reference
+	89.0%   	 81.7%    85.2%   	310  	276	 338
+
+1. Multiword matcher (this is ok)
+	Precision	Recall	F-measure	Found	Correct		Reference
+	4.1%		7.7%	5.3%		640		26		338
+
+
+2. Thesaurus (this is awesome)
+	Precision	Recall	F-measure	Found	Correct		Reference
+	85.5%		69.5%	76.7%		275		235		338
+
+6. Hybrid: 
+	Precision	Recall	F-measure	Found	Correct		Reference
+	57.0%		81.7%	67.2%		484		276		338
+
+7. Lexical Matcher (Good and fast)
+	Precision	Recall	F-measure	Found	Correct		Reference
+	85.5%		69.5%	76.7%		275		235		338
+
+8. SpaceLexicalMatcher
+	Precision	Recall	F-measure	Found	Correct		Reference
+	84.2%		71.0%	77.0%		285		240		338
+
+
+3. LocalDefMatchers gives 0 (since there are 0 classes)
+
+4. Background knowledge -> 0
+
+5. Acronym —-> 0.0
+
+9. String Matcher —> 0
+
+10. Value to Lexicon Matcher (didn’t finish)
+
+11. Value Matcher -0
+
+12. value string -0
+
+13. WordNetMatcher - 0( will implement synonym and all)
+
+
+14. Added more stop words (but it decreases)
+
+
+
+
+
+
+
+
 
 
 
@@ -44,4 +98,9 @@ Experiments (Goal: Increase F-Measure)
 3. Instead of returning Max (i am taking average) to combine similarities. (Precision up, F down)
 	Precision	Recall	F-measure	Found	Correct	Reference
 	89.6%		79.0%	84.0%		298	267	338
-4. 
+4. Average of Baseline + Acronym
+ —> It gives 0, No idea why
+
+5. LWC of name similarity and multiword Matcher
+   ->  bad performance (44% F measure).
+
