@@ -1,3 +1,5 @@
+———————————————————————————————————————————————————————
+
 1. Read Papers on Instance Matching
 2. Use Protege
 3. use text (maybe ) of the entities
@@ -16,6 +18,14 @@ My Strategy (Considering)
 1.6 N Grams ?
 
 
+
+My APIS
+1. Wordnet Hypernym matcher (http://www.nltk.org/howto/wordnet.html, similarity heading) 
+
+
+
+
+
 List of similarities
  Affine edit distance Smith-Waterman distance Monge-Elkan distance Cosine similarity Hamming distance Generalized edit distance Jaro-Winkler distance Q-gram Soundex distance  TF/IDF
 
@@ -24,7 +34,7 @@ Preprocessing
 2. Replace with correct spelling
 3. 
 
-
+———————————————————————————————————————————————————————
 Individual Matchers
 Baseline Program
 	Precision	Recall	F-measure	Found	Correct	 Reference
@@ -72,16 +82,44 @@ Baseline Program
 14. Added more stop words (but it decreases)
 
 
+———————————————————————————————————————————————————————
+
+Experiments with Threshold 
+
+(since the current matcher is adding all over >0.9 however in the golden set some similarity are from 0.6, 0.65…)
+1. threshold = 0.7; (F = - 0.3)
+Precision	Recall	F-measure	Found	Correct		Reference
+83.2%		86.7%	84.9%		352		293		338
+
+
+1.1 Threshold: 0.73 (Delta F = 0.9) ************ (Use this maybe)*****
+Precision	Recall	F-measure	Found	Correct		Reference
+86.3%		85.8%	86.1%		336		290		338
+
+2. Threshold =0.75 (Delta F1 = 0.3)
+Precision	Recall	F-measure	Found	Correct		Reference
+86.5%		85.2%	85.8%		333		288		338
+
+3. Threshold =0.8
+Precision	Recall	F-measure	Found	Correct		Reference
+87.4%		84.0%	85.7%		325		284		338
+
+
+Logic: My correct reference has increased by found as well. I need to keep my correct reference count as same and Found to decrease.
+
+———————————————————————————————————————————————————————
+Experiments with WordNet
+1. Implemented WuPalmar similarity (lol this is bad)
+—> Individual
+
+Precision	Recall	F-measure	Found	Correct	Reference
+0.1%		95.6%	0.2%		349992		323		338
+
+2. Average of Baseline + wupalmer (less than baseline :( )
 
 
 
-
-
-
-
-
-
-
+———————————————————————————————————————————————————————
 Combining all those Matchers
 Experiments to run: 
 
@@ -103,4 +141,4 @@ Experiments (Goal: Increase F-Measure)
 
 5. LWC of name similarity and multiword Matcher
    ->  bad performance (44% F measure).
-
+———————————————————————————————————————————————————————

@@ -49,6 +49,119 @@ public class MyMatcher extends AbstractInstanceMatcher {
         stopSet = StopList.read();
     }
 
+    /*
+    * Calculating Similarity from Wordnet
+    * 1. WuPalmer
+    * 2. SynSet Similarity
+    * 3. Nouns, Pronoun, Verb Similarity
+    *
+    *
+    * */
+
+
+    public Alignment semanticSimilarity_Synsets(EntityType e, double threshold) throws UnsupportedEntityTypeException {
+        if (!e.equals(EntityType.INDIVIDUAL))
+            throw new UnsupportedEntityTypeException(e.toString());
+        int classId = AML.getInstance().getSource().getLexicon().getBestEntity(EntityType.CLASS, "topic", true);
+
+
+        Alignment a = new Alignment();
+
+        //For each combination of instances, perform a name match
+        for (Integer s : sourceInd) {
+            if (!rels.belongsToClass(s, classId))
+                continue;
+            for (Integer t : targetInd) {
+                double sim = wuPalamar_similarity(s, t);
+                if (sim >= threshold) {
+                    a.add(s, t, sim);
+                }
+            }
+        }
+
+        //Perform selection
+        Selector s = new Selector(threshold, SelectionType.PERMISSIVE);
+        a = s.filter(a);
+
+        return a;
+    }
+
+
+    public Alignment match_wordNet(EntityType e, double threshold) throws UnsupportedEntityTypeException {
+        if (!e.equals(EntityType.INDIVIDUAL))
+            throw new UnsupportedEntityTypeException(e.toString());
+        int classId = AML.getInstance().getSource().getLexicon().getBestEntity(EntityType.CLASS, "topic", true);
+
+
+        Alignment a = new Alignment();
+
+        //For each combination of instances, perform a name match
+        for (Integer s : sourceInd) {
+            if (!rels.belongsToClass(s, classId))
+                continue;
+            for (Integer t : targetInd) {
+                double sim = wuPalamar_similarity(s, t);
+                if (sim >= threshold) {
+                    a.add(s, t, sim);
+                }
+            }
+        }
+
+        //Perform selection
+        Selector s = new Selector(threshold, SelectionType.PERMISSIVE);
+        a = s.filter(a);
+
+        return a;
+    }
+
+    protected double wuPalamar_similarity(int i1, int i2) {
+
+        double wuSimilarity_measure = 0.0;
+
+
+        for (String n1 : sLex.getNames(i1)) {
+            if (n1.length() != 0 && n1 != null) {
+                for (String n2 : tLex.getNames(i2)) {
+                    if (n2.length() != 0 && n2 != null) {
+
+                        if (n1.equals(n2))
+                            return 1.0;
+
+                        if (StringParser.isFormula(n1) || StringParser.isFormula(n2))
+                            return 0.0;
+
+                        //copied from below function
+                        String[] sW = n1.split(" ");
+                        HashSet<String> n1Words = new HashSet<String>();
+                        for (String s : sW)
+                            if (!stopSet.contains(s))
+                                n1Words.add(s);
+
+                        String[] tW = n2.split(" ");
+                        HashSet<String> n2Words = new HashSet<String>();
+                        for (String s : tW)
+                            if (!stopSet.contains(s))
+                                n2Words.add(s);
+
+                        for (String a : n1Words) {
+
+                            for (String b : n2Words) {
+                                wuSimilarity_measure = Math.max(wuSimilarity_measure, wn.wuPalmerScore(a, b));
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+
+        return wuSimilarity_measure;
+
+    }
+
+
     //Public Methods
     public Alignment match(EntityType e, double threshold) throws UnsupportedEntityTypeException {
         if (!e.equals(EntityType.INDIVIDUAL))
@@ -84,6 +197,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
         HashMap<String, Double> similarityMeasures = new HashMap<>();
 
         double names_Similarity = 0.0;
+        double wu_pal = 0.0;
 //        double synonym_Similarity = 0.0;
 //        double acronym_Similarity = 0.0;
 //        double multiword_Similarity = 0.0;
@@ -115,6 +229,9 @@ public class MyMatcher extends AbstractInstanceMatcher {
 
 
                         names_Similarity = Math.max(names_Similarity, nameSimilarity(n1, n2, useWordNet));
+                        wu_pal = Math.max(wu_pal, wn.wuPalmerScore(n1, n2));
+
+
 //                        acronym_Similarity = Math.max(acronym_Similarity, acronymMatcher(n1, n2));
 
 
@@ -130,7 +247,64 @@ public class MyMatcher extends AbstractInstanceMatcher {
 //        similarityMeasures.put("commonWordsSimilarity", commonWordsInArticles_similarity);
 
         // change this return value after combining
-        return names_Similarity;
+        return (names_Similarity) + wu_pal / 2;
+    }
+
+
+    protected double nameSimilarity(String n1, String n2, boolean useWordNet) {
+        //Check whether the names are equal
+        if (n1.equals(n2))
+            return 1.0;
+
+        //Since we cannot use string or word similarity on formulas
+        //if the names are (non-equal) formulas their similarity is zero
+        if (StringParser.isFormula(n1) || StringParser.isFormula(n2))
+            return 0.0;
+
+        //Compute the String similarity
+        double stringSim = ISub.stringSimilarity(n1, n2);
+
+        //Compute the String similarity after removing stop words
+        String n1S = n1;
+        String n2S = n2;
+        for (String s : stopSet) {
+            n1S = n1S.replace(s, "").trim();
+            n2S = n2S.replace(s, "").trim();
+        }
+        stringSim = Math.max(stringSim, ISub.stringSimilarity(n1S, n2S) * 0.95);
+
+        //Compute the Word similarity (ignoring stop words)
+
+        double wordSim = 0.0;
+
+        //Split the source name into words
+        String[] sW = n1.split(" ");
+        HashSet<String> n1Words = new HashSet<String>();
+        for (String s : sW)
+            if (!stopSet.contains(s))
+                n1Words.add(s);
+
+        String[] tW = n2.split(" ");
+        HashSet<String> n2Words = new HashSet<String>();
+        for (String s : tW)
+            if (!stopSet.contains(s))
+                n2Words.add(s);
+
+
+        //Do a weighted Jaccard, where words are weighted by length
+        double total = 0.0;
+        for (String s : n1Words) {
+            if (n2Words.contains(s))
+                wordSim += s.length();
+            else
+                total += s.length();
+        }
+        for (String s : n2Words)
+            total += s.length();
+        wordSim /= total;
+
+
+        return Math.max(stringSim, wordSim);
     }
 
 
@@ -198,63 +372,6 @@ public class MyMatcher extends AbstractInstanceMatcher {
 
     }
 
-    protected double nameSimilarity(String n1, String n2, boolean useWordNet) {
-        //Check whether the names are equal
-        if (n1.equals(n2))
-            return 1.0;
-
-        //Since we cannot use string or word similarity on formulas
-        //if the names are (non-equal) formulas their similarity is zero
-        if (StringParser.isFormula(n1) || StringParser.isFormula(n2))
-            return 0.0;
-
-        //Compute the String similarity
-        double stringSim = ISub.stringSimilarity(n1, n2);
-
-        //Compute the String similarity after removing stop words
-        String n1S = n1;
-        String n2S = n2;
-        for (String s : stopSet) {
-            n1S = n1S.replace(s, "").trim();
-            n2S = n2S.replace(s, "").trim();
-        }
-        stringSim = Math.max(stringSim, ISub.stringSimilarity(n1S, n2S) * 0.95);
-
-        //Compute the Word similarity (ignoring stop words)
-
-        double wordSim = 0.0;
-
-        //Split the source name into words
-        String[] sW = n1.split(" ");
-        HashSet<String> n1Words = new HashSet<String>();
-        for (String s : sW)
-            if (!stopSet.contains(s))
-                n1Words.add(s);
-
-        String[] tW = n2.split(" ");
-        HashSet<String> n2Words = new HashSet<String>();
-        for (String s : tW)
-            if (!stopSet.contains(s))
-                n2Words.add(s);
-
-
-        //Do a weighted Jaccard, where words are weighted by length
-        double total = 0.0;
-        for (String s : n1Words) {
-            if (n2Words.contains(s))
-                wordSim += s.length();
-            else
-                total += s.length();
-        }
-        for (String s : n2Words)
-            total += s.length();
-        wordSim /= total;
-
-
-        return Math.max(stringSim, wordSim);
-    }
-
-
     //Main Method
     public static void main(String[] args) throws Exception {
         //Path to input ontology files (edit manually)
@@ -276,7 +393,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
         System.out.println("Running Instance Matcher");
 
         //Set threshold
-        double threshold = 0.9;
+        double threshold = 0.729;
 
         //Matching Algorithm
         MyMatcher mm = new MyMatcher();
@@ -314,12 +431,12 @@ public class MyMatcher extends AbstractInstanceMatcher {
         aml.openReferenceAlignment(referencePath);
         Alignment ref = aml.getReferenceAlignment();
 
-        myMatcher.saveRDF("./matcher.rdf");
+        myMatcher.saveRDF("./matcher_1.rdf");
 
 //        ref.saveRDF("./matcher.rdf");
 
         aml.evaluate();
-//        System.out.println(aml.getEvaluation());
+        System.out.println(aml.getEvaluation());
 
     }
 }

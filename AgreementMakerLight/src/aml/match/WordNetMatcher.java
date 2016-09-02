@@ -48,6 +48,7 @@ public class WordNetMatcher implements PrimaryMatcher, LexiconExtender
 	//The source of this LexiconExtender
 	private final String SOURCE = "WordNet";
 	//The confidence score of WordNet
+
 	private final double CONFIDENCE = 0.9;
 	
 //Constructors

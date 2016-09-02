@@ -106,6 +106,7 @@ public class HybridStringMatcher implements PrimaryMatcher, Rematcher
 		System.out.println("Running Hybrid String Matcher");
 		long time = System.currentTimeMillis()/1000;
 		Set<Integer> sources = sLex.getEntities(e);
+
 		Set<Integer> targets = tLex.getEntities(e);
 		Alignment a = new Alignment();
 		for(Integer i : sources)
