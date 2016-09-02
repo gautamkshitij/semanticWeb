@@ -589,7 +589,7 @@ public class Alignment implements Collection<Mapping> {
 
                 m.setStatus(MappingStatus.CORRECT);
             } else if (ref.contains(m.getSourceId(), m.getTargetId(), MappingRelation.UNKNOWN)) {
-
+                if (whichOne == 2) askedMappings.add(m);
                 m.setStatus(MappingStatus.UNKNOWN);
             } else {
                 if (whichOne == 0) askedMappings.add(m);

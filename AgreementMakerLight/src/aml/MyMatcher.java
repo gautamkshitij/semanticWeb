@@ -170,6 +170,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
 
         Alignment a = new Alignment();
 
+
         //For each combination of instances, perform a name match
         for (Integer s : sourceInd) {
             if (!rels.belongsToClass(s, classId))
@@ -177,7 +178,12 @@ public class MyMatcher extends AbstractInstanceMatcher {
             for (Integer t : targetInd) {
                 double sim = nameSimilarity(s, t, true);
                 if (sim >= threshold) {
+//                    System.out.println("MATCHED: \t" + sLex.getBestName(s) + "\t" + tLex.getBestName(t) + "\t" + sim);
                     a.add(s, t, sim);
+                } else {
+//                    System.out.println("Not Matched: \t" + sLex.getBestName(s) + "\t" + tLex.getBestName(t) + "\t" + sim);
+
+
                 }
             }
         }
@@ -222,10 +228,9 @@ public class MyMatcher extends AbstractInstanceMatcher {
 
 
         names_Similarity = nameSimilarity(sLex.getBestName(i1), tLex.getBestName(i2), true);
-        wu_pal = wn.wuPalmerScore(sLex.getBestName(i1), tLex.getBestName(i2));
 
 
-
+//        wu_pal = wn.wuPalmerScore(sLex.getBestName(i1), tLex.getBestName(i2));
 
 
 //        for (String n1 : sLex.getNames(i1)) {
@@ -254,7 +259,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
 //        similarityMeasures.put("commonWordsSimilarity", commonWordsInArticles_similarity);
 
         // change this return value after combining
-        return 0.90 * (names_Similarity) + (wu_pal * 0.1);
+        return (names_Similarity);
     }
 
 
@@ -262,7 +267,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
         //Check whether the names are equal
         if (n1.equals(n2))
             return 1.0;
-        n1 = n1.trim().toLowerCase().replaceAll("[-+.%$^:,;{}[]@#*]]&amp", "");
+        n1 = n1.trim().toLowerCase().replaceAll("[-+._%$^:,;{}[]@#*]]&amp", "");
         n2 = n2.trim().toLowerCase().replaceAll("[-+.%$^:,;{}[]@#*]]&amp", "");
         //Since we cannot use string or word similarity on formulas
         //if the names are (non-equal) formulas their similarity is zero
@@ -312,7 +317,35 @@ public class MyMatcher extends AbstractInstanceMatcher {
         wordSim /= total;
 
 
-        return Math.max(stringSim, wordSim);
+        //hypernym similarity
+
+        double hypernymSim = 0.0;
+        String[] w1 = n1.split(" ");
+        HashSet<String> n1HyperWords = new HashSet<String>();
+        for (String s : w1) {
+            if (!stopSet.contains(s)) {
+                n1HyperWords.addAll(wn.getHypernyms(s));
+            }
+        }
+
+        String[] w2 = n2.split(" ");
+        HashSet<String> n2HyperWords = new HashSet<String>();
+        for (String s : w2)
+            if (!stopSet.contains(s)) {
+                n2HyperWords.addAll(wn.getHypernyms(s));
+            }
+
+
+        HashSet<String> intersection = new HashSet<>(n1HyperWords);
+        intersection.retainAll(n2HyperWords);
+
+
+        if (n1HyperWords.size() != 0 || n1HyperWords.size() != 0) {
+            hypernymSim = (intersection.size()) / (n1HyperWords.size() + n2HyperWords.size());
+        } else hypernymSim = 0.0;
+
+
+        return Math.max(Math.max(stringSim, wordSim), hypernymSim);
     }
 
 
@@ -380,6 +413,70 @@ public class MyMatcher extends AbstractInstanceMatcher {
 
     }
 
+    public Alignment hyperNymmatch(EntityType e, double threshold) throws UnsupportedEntityTypeException {
+        if (!e.equals(EntityType.INDIVIDUAL))
+            throw new UnsupportedEntityTypeException(e.toString());
+        int classId = AML.getInstance().getSource().getLexicon().getBestEntity(EntityType.CLASS, "topic", true);
+
+
+        Alignment a = new Alignment();
+
+
+        //For each combination of instances, perform a name match
+        for (Integer s : sourceInd) {
+            if (!rels.belongsToClass(s, classId))
+                continue;
+            for (Integer t : targetInd) {
+                double sim = getHyperNymSimilarity(s, t);
+                if (sim >= threshold) {
+//                    System.out.println("MATCHED: \t" + sLex.getBestName(s) + "\t" + tLex.getBestName(t) + "\t" + sim);
+                    a.add(s, t, sim);
+                } else {
+//                    System.out.println("Not Matched: \t" + sLex.getBestName(s) + "\t" + tLex.getBestName(t) + "\t" + sim);
+
+
+                }
+            }
+        }
+
+        //Perform selection
+        Selector s = new Selector(threshold, SelectionType.PERMISSIVE);
+        a = s.filter(a);
+
+        return a;
+    }
+
+    protected double getHyperNymSimilarity(Integer i1, Integer i2) {
+
+        double hypernymSimilarity = 0.0;
+
+
+        String[] w1 = sLex.getBestName(i1).split(" ");
+        HashSet<String> n1Words = new HashSet<String>();
+        for (String s : w1) {
+            if (!stopSet.contains(s)) {
+                n1Words.addAll(wn.getHypernyms(s));
+            }
+        }
+
+        String[] w2 = tLex.getBestName(i2).split(" ");
+        HashSet<String> n2Words = new HashSet<String>();
+        for (String s : w2)
+            if (!stopSet.contains(s)) {
+                n2Words.addAll(wn.getHypernyms(s));
+            }
+
+
+        HashSet<String> intersection = new HashSet<>(n1Words);
+        intersection.retainAll(n2Words);
+
+        if (intersection.size() == 0) return 0;
+        if (n1Words.size() == 0 && n2Words.size() == 0) return 0;
+        return (intersection.size()) / (n1Words.size() + n2Words.size());
+
+
+    }
+
     //Main Method
     public static void main(String[] args) throws Exception {
         //Path to input ontology files (edit manually)
@@ -401,7 +498,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
         System.out.println("Running Instance Matcher");
 
         //Set threshold
-        double threshold = 0.729;
+        double threshold = 0.71;
 
         //Matching Algorithm
         MyMatcher mm = new MyMatcher();
@@ -427,7 +524,12 @@ public class MyMatcher extends AbstractInstanceMatcher {
 //        combinedAlignment1 = LWC.combine(myMatcher, lexicalMatcher, 0.9); //0.8 weight to myMatcher
 //        combinedAlignment2 = LWC.combine(hybridString, spaceLexicalMatcher, 0.3);
 
+
+        Alignment hyperMatcher = mm.hyperNymmatch(EntityType.INDIVIDUAL, threshold);
+
         aml.setAlignment(myMatcher);
+
+//        aml.setAlignment(LWC.combine(myMatcher, hyperMatcher, 0.1));
 
 //        aml.setAlignment(LWC.combine(myMatcher, hybridString, 0.5));
 
@@ -443,14 +545,22 @@ public class MyMatcher extends AbstractInstanceMatcher {
 
 //        ref.saveRDF("./matcher.rdf");
 
+
         aml.evaluate();
         // 0- get wrong mappings, 1- correct mappings
-        ArrayList<Mapping> askedMappings = myMatcher.printWrongMappings(ref, 1);
-
-        System.out.println("\n\n\n\n" + askedMappings);
+//        ArrayList<Mapping> askedMappings = myMatcher.printWrongMappings(ref, 0);
+//        System.out.println(askedMappings);
+//
+//
+//        System.out.println("\n\n\n\nHELLO\n\n\n\n");
+//        askedMappings = myMatcher.printWrongMappings(ref, 1);
+//
+//        System.out.println(askedMappings);
 
 
         System.out.println(aml.getEvaluation());
 
     }
+
+
 }

@@ -51,6 +51,15 @@
 	<map>
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Door-to-door"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Door"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Door-to-door"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Door-to-door"/>
 			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
 			<relation>=</relation>
@@ -205,6 +214,15 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Boycott"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Boycott"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Right_of_asylum"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Right_to_asylum"/>
 			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
 			<relation>=</relation>
 		</Cell>
@@ -484,6 +502,15 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#european_convention_on_human_rights"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/European_Convention_on_Human_Rights"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#european_convention_on_human_rights"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/European_Convention_of_Human_Rights"/>
 			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
 			<relation>=</relation>
 		</Cell>
@@ -960,6 +987,15 @@
 	<map>
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#European_Court_of_Human_Rights"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/European_Court_for_Human_Rights"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#European_Court_of_Human_Rights"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/European_Court_of_Human_Rights"/>
 			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
 			<relation>=</relation>
@@ -1006,6 +1042,15 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#José_Bové"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/José_Bové"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Establishment"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/The_Establishment"/>
 			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
 			<relation>=</relation>
 		</Cell>
@@ -1886,6 +1931,15 @@
 
 	<map>
 		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Tax_evasion"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Evasion_of_tax"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#European_Court_of_Justice"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/European_Court_of_Justice"/>
 			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
@@ -2219,45 +2273,9 @@
 
 	<map>
 		<Cell>
-			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Healthcare"/>
-			<entity2 rdf:resource="http://dbpedia.org/resource/Health_care"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9743</measure>
-			<relation>=</relation>
-		</Cell>
-	</map>
-
-	<map>
-		<Cell>
-			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Childcare"/>
-			<entity2 rdf:resource="http://dbpedia.org/resource/Child_care"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9716</measure>
-			<relation>=</relation>
-		</Cell>
-	</map>
-
-	<map>
-		<Cell>
-			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Establishment"/>
-			<entity2 rdf:resource="http://dbpedia.org/resource/The_Establishment"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</measure>
-			<relation>=</relation>
-		</Cell>
-	</map>
-
-	<map>
-		<Cell>
-			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Criminal"/>
-			<entity2 rdf:resource="http://dbpedia.org/resource/Criminal_law"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.892</measure>
-			<relation>=</relation>
-		</Cell>
-	</map>
-
-	<map>
-		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Pan-European_corridor"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Pan-European_corridors"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8874</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.986</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2266,7 +2284,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Digital_natives"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Digital_native"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8814</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9793</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2275,7 +2293,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Politcal_union"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Political_union"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8814</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9793</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2284,7 +2302,25 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Sit-down_strike"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Sitdown_strike"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8783</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9759</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Healthcare"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Health_care"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9714</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Childcare"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Child_care"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9684</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2293,16 +2329,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Eurogroup"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Euro_Group"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8716</measure>
-			<relation>=</relation>
-		</Cell>
-	</map>
-
-	<map>
-		<Cell>
-			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Income"/>
-			<entity2 rdf:resource="http://dbpedia.org/resource/Income_tax"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.865</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9684</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2311,7 +2338,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Communication_Workers_Union"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Communication_Workers_Union_(UK)"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8542</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9492</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2320,7 +2347,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Left-Libertarian"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Left-libertarianism"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8537</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9486</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2329,7 +2356,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Policy_Network_UK"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Policy_Network"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8477</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9419</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2338,7 +2365,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Liberal_Democratic"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Liberal_Democrats"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8449</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9387</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2347,7 +2374,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Christian-Democrat_&_Conservative"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Political_groups_of_the_European_Parliament#Christian_Democrats.2FConservatives"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8447</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9386</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2356,7 +2383,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Friends_of_the_Earth"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Friends_of_the_Earth_(HK)"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.84</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9333</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2365,16 +2392,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Greenpeace_UK"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Greenpeace"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8296</measure>
-			<relation>=</relation>
-		</Cell>
-	</map>
-
-	<map>
-		<Cell>
-			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Court"/>
-			<entity2 rdf:resource="http://dbpedia.org/resource/Courthouse"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.82</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9217</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2383,7 +2401,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Whistle-Stop_Tour"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Whistle_stop_train_tour"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.819</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.91</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2392,7 +2410,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Competition"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Competition_law"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8169</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9077</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2401,7 +2419,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Mariano_Rajoy_Brey"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Mariano_Rajoy"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8129</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9032</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2410,7 +2428,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Angela_Dorothea_Merkel"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Angela_Merkel"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8123</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9025</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2419,7 +2437,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Labour_party"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Labour_Party_(UK)"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8069</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8966</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2428,16 +2446,16 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Nigel_Paul_Farage"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Nigel_Farage"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8069</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8966</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
 
 	<map>
 		<Cell>
-			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Secretary"/>
-			<entity2 rdf:resource="http://dbpedia.org/resource/Home_Secretary"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8043</measure>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Criminal"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Criminal_law"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.88</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2446,7 +2464,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#European_law"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/European_Union_law"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.792</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.88</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2455,7 +2473,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#John_Fredrik_Reinfeldt"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Fredrik_Reinfeldt"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7846</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8718</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2464,7 +2482,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Catherine_Margaret_Ashton"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Catherine_Ashton"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7815</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8683</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2473,7 +2491,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Lobby"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Lobbying"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7754</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8615</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2482,7 +2500,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#House_of_Commons"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/House_of_Commons_of_Canada"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7714</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8571</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2491,7 +2509,16 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#National_Union_of_Students"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/National_Union_of_Students_(United_Kingdom)"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.767</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8522</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Income"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Income_tax"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.85</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2500,7 +2527,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#European_Foundation"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/European_Foundation_(think_tank)"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7624</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8471</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2509,25 +2536,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Euroskeptic"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Euroscepticism"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7604</measure>
-			<relation>=</relation>
-		</Cell>
-	</map>
-
-	<map>
-		<Cell>
-			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#revolt"/>
-			<entity2 rdf:resource="http://dbpedia.org/resource/Revolution"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7409</measure>
-			<relation>=</relation>
-		</Cell>
-	</map>
-
-	<map>
-		<Cell>
-			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Press_conference"/>
-			<entity2 rdf:resource="http://dbpedia.org/resource/News_conference"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7376</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8449</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2536,7 +2545,16 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Sanction"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Sanctions_(law)"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7357</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8174</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Secretary"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Secretary_(title)"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8154</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2545,7 +2563,7 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#emissions"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Emissions_trading"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7338</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8154</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
@@ -2554,7 +2572,223 @@
 		<Cell>
 			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Conservative"/>
 			<entity2 rdf:resource="http://dbpedia.org/resource/Conservative_Party_(UK)"/>
-			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7303</measure>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8114</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Peter_Robinson"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Peter_Robinson_(politician)"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8098</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Court"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Courthouse"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#George_Gideon_Oliver_Osborne"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/George_Osborne"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Donald_Franciszek_Tusk"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Donald_Tusk"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Environment"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Environmental_movement"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#European_Court_of_Auditors"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Court_of_Auditors"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7907</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Structural_funds"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Structural_Funds_and_Cohesion_Fund"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7853</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Strike"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Strike_action"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7824</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#David_William_Donald_Cameron"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/David_Cameron"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7805</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Legitimacy"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Legitimacy_(political)"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.775</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Foreign_office"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Foreign_and_Commonwealth_Office"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7733</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Democratic_Europe"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Democratic_deficit_in_the_European_Union"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7686</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Fiscal_compact"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/European_Fiscal_Compact"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.76</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#women_and_politics"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Women's_Social_and_Political_Union"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7581</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Liberal"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Liberal_democracy"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Party_manifesto"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Manifesto"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.75</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Interview"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Interview_(journalism)"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7484</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Redistribution"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Redistribution_of_income_and_wealth"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7429</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#European_Constitution"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/European_Union"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7353</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Minister"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Minister_(government)"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.731</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Movement"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/White_movement"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7273</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Security_and_Justice"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Area_of_freedom,_security_and_justice"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7143</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#revolt"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Revolution"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7121</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://big.csr.unibo.it/sabine-eng.owl#Directive"/>
+			<entity2 rdf:resource="http://dbpedia.org/resource/Directive_(European_Union)"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.711</measure>
 			<relation>=</relation>
 		</Cell>
 	</map>
