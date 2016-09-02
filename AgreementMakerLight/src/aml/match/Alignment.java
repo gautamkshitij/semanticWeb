@@ -25,14 +25,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.PrintWriter;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
-import java.util.Vector;
+import java.util.*;
 
 import org.apache.commons.lang.StringEscapeUtils;
 import org.dom4j.Document;
@@ -578,6 +571,40 @@ public class Alignment implements Collection<Mapping> {
     }
 
     /**
+     * Author: Kshitij Gautam
+     *
+     * @param ref: the reference Alignment to evaluate this Alignment
+     * @return the evaluation of this Alignment {# correct mappings, # conflict mappings}
+     */
+    public ArrayList<Mapping> printWrongMappings(Alignment ref, int whichOne) {
+
+        if (whichOne > 2 || whichOne < 0) return null;
+        //0 - wrong, 1- correct, 2 - unkown
+        ArrayList<Mapping> askedMappings = new ArrayList<>();
+        for (Mapping m : maps) {
+            if (ref.contains(m)) {
+
+                if (whichOne == 1) askedMappings.add(m);
+
+
+                m.setStatus(MappingStatus.CORRECT);
+            } else if (ref.contains(m.getSourceId(), m.getTargetId(), MappingRelation.UNKNOWN)) {
+
+                m.setStatus(MappingStatus.UNKNOWN);
+            } else {
+                if (whichOne == 0) askedMappings.add(m);
+                m.setStatus(MappingStatus.INCORRECT);
+
+
+            }
+
+        }
+        return askedMappings;
+
+    }
+
+
+    /**
      * @param ref: the reference Alignment to evaluate this Alignment
      * @return the evaluation of this Alignment {# correct mappings, # conflict mappings}
      */
@@ -653,8 +680,8 @@ public class Alignment implements Collection<Mapping> {
     }
 
     /**
-     * @param id1:      the index of the first class to check in the Alignment
-     * @param targetId: the index of the second class to check in the Alignment
+     * @param id1: the index of the first class to check in the Alignment
+     * @param id2: the index of the second class to check in the Alignment
      * @return the Mapping between the classes or null if no such Mapping exists
      * in either direction
      */

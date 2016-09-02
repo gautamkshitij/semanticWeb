@@ -115,8 +115,17 @@ Experiments with WordNet
 Precision	Recall	F-measure	Found	Correct	Reference
 0.1%		95.6%	0.2%		349992		323		338
 
-2. Average of Baseline + wupalmer (less than baseline :( )
+2. Average of Baseline + wupalmer (*****), will experiment more
 
+
+return (names_Similarity) + wu_pal / 4;
+Precision	Recall	F-measure	Found	Correct	Reference
+86.0%		87.0%	86.5%		342		294		338
+
+3. 0.90 * (names_Similarity) + (wu_pal * 0.1);********
+
+Precision	Recall	F-measure	Found	Correct	Reference
+88.2%		84.0%	86.1%		322		284		338
 
 
 ———————————————————————————————————————————————————————
@@ -141,4 +150,18 @@ Experiments (Goal: Increase F-Measure)
 
 5. LWC of name similarity and multiword Matcher
    ->  bad performance (44% F measure).
+———————————————————————————————————————————————————————
+Reverse Engineering
+1. I have modified the code and printed all the correct and wrong mappings now.
+example:
+Inflation is twice (correct and in wrong), 
+Correct: Inflation—> Inflation
+Wrong: Inflation—> Inflation_cosmology (in the golden set Inflation is only once)
+
+so trying to get the BestName instead of getting Set of names. 
+
+Precision	Recall	F-measure	Found	Correct	Reference
+93.6%		78.4%	85.3%		283		265		338
+
+
 ———————————————————————————————————————————————————————

@@ -58,7 +58,6 @@ public class MyMatcher extends AbstractInstanceMatcher {
     *
     * */
 
-
     public Alignment semanticSimilarity_Synsets(EntityType e, double threshold) throws UnsupportedEntityTypeException {
         if (!e.equals(EntityType.INDIVIDUAL))
             throw new UnsupportedEntityTypeException(e.toString());
@@ -222,23 +221,31 @@ public class MyMatcher extends AbstractInstanceMatcher {
         * */
 
 
-        for (String n1 : sLex.getNames(i1)) {
-            if (n1.length() != 0 && n1 != null) {
-                for (String n2 : tLex.getNames(i2)) {
-                    if (n2.length() != 0 && n2 != null) {
+        names_Similarity = nameSimilarity(sLex.getBestName(i1), tLex.getBestName(i2), true);
+        wu_pal = wn.wuPalmerScore(sLex.getBestName(i1), tLex.getBestName(i2));
 
 
-                        names_Similarity = Math.max(names_Similarity, nameSimilarity(n1, n2, useWordNet));
-                        wu_pal = Math.max(wu_pal, wn.wuPalmerScore(n1, n2));
 
 
-//                        acronym_Similarity = Math.max(acronym_Similarity, acronymMatcher(n1, n2));
 
-
-                    }
-                }
-            }
-        }
+//        for (String n1 : sLex.getNames(i1)) {
+//
+//            if (n1.length() != 0 && n1 != null) {
+//                for (String n2 : tLex.getNames(i2)) {
+//                    if (n2.length() != 0 && n2 != null) {
+//
+//
+//                        names_Similarity = Math.max(names_Similarity, nameSimilarity(n1, n2, useWordNet));
+//                        wu_pal = Math.max(wu_pal, wn.wuPalmerScore(n1, n2));
+//
+//
+////                        acronym_Similarity = Math.max(acronym_Similarity, acronymMatcher(n1, n2));
+//
+//
+//                    }
+//                }
+//            }
+//        }
 
 //        similarityMeasures.put("NamesSimilarity", names_Similarity);
 //        similarityMeasures.put("synonymSimilarity", synonym_Similarity);
@@ -247,7 +254,7 @@ public class MyMatcher extends AbstractInstanceMatcher {
 //        similarityMeasures.put("commonWordsSimilarity", commonWordsInArticles_similarity);
 
         // change this return value after combining
-        return (names_Similarity) + wu_pal / 2;
+        return 0.90 * (names_Similarity) + (wu_pal * 0.1);
     }
 
 
@@ -255,7 +262,8 @@ public class MyMatcher extends AbstractInstanceMatcher {
         //Check whether the names are equal
         if (n1.equals(n2))
             return 1.0;
-
+        n1 = n1.trim().toLowerCase().replaceAll("[-+.%$^:,;{}[]@#*]]&amp", "");
+        n2 = n2.trim().toLowerCase().replaceAll("[-+.%$^:,;{}[]@#*]]&amp", "");
         //Since we cannot use string or word similarity on formulas
         //if the names are (non-equal) formulas their similarity is zero
         if (StringParser.isFormula(n1) || StringParser.isFormula(n2))
@@ -436,6 +444,12 @@ public class MyMatcher extends AbstractInstanceMatcher {
 //        ref.saveRDF("./matcher.rdf");
 
         aml.evaluate();
+        // 0- get wrong mappings, 1- correct mappings
+        ArrayList<Mapping> askedMappings = myMatcher.printWrongMappings(ref, 1);
+
+        System.out.println("\n\n\n\n" + askedMappings);
+
+
         System.out.println(aml.getEvaluation());
 
     }
