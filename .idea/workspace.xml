@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46f48bba-c27c-4447-85f7-8fa36fca6069" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgreementMakerLight/src/aml/MyMatcher.java" afterPath="$PROJECT_DIR$/AgreementMakerLight/src/aml/MyMatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgreementMakerLight/src/aml/match/Alignment.java" afterPath="$PROJECT_DIR$/AgreementMakerLight/src/aml/match/Alignment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matcher_1.rdf" afterPath="$PROJECT_DIR$/matcher_1.rdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output.txt" afterPath="$PROJECT_DIR$/output.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1. notmatched.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2. matched.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/matcher.rdf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
     </list>
     <ignored path="AML-Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="MyMatcher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AgreementMakerLight/src/aml/MyMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="417" column="67" selection-start-line="417" selection-start-column="67" selection-end-line="417" selection-end-column="67" />
+            <state relative-caret-position="111">
+              <caret line="469" column="61" selection-start-line="469" selection-start-column="61" selection-end-line="469" selection-end-column="61" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -47,6 +47,7 @@
                 <element signature="e#12039#12040#0" expanded="true" />
                 <element signature="e#12065#12066#0" expanded="true" />
                 <element signature="method#acronymMatcher#0;class#MyMatcher#0" expanded="false" />
+                <element signature="method#hyperNymmatch#0;class#MyMatcher#0" expanded="false" />
                 <marker date="1472858890000" expanded="false" signature="2397:3217" ph="{...}" />
                 <marker date="1472858890000" expanded="false" signature="3325:4145" ph="{...}" />
               </folding>
@@ -578,7 +579,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -587,7 +588,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18640094" sideWeight="0.50555557" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21688159" sideWeight="0.49444443" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21688159" sideWeight="0.49444443" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1030,8 +1031,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AgreementMakerLight/src/aml/MyMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="417" column="67" selection-start-line="417" selection-start-column="67" selection-end-line="417" selection-end-column="67" />
+        <state relative-caret-position="111">
+          <caret line="469" column="61" selection-start-line="469" selection-start-column="61" selection-end-line="469" selection-end-column="61" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1043,6 +1044,7 @@
             <element signature="e#12039#12040#0" expanded="true" />
             <element signature="e#12065#12066#0" expanded="true" />
             <element signature="method#acronymMatcher#0;class#MyMatcher#0" expanded="false" />
+            <element signature="method#hyperNymmatch#0;class#MyMatcher#0" expanded="false" />
             <marker date="1472858890000" expanded="false" signature="2397:3217" ph="{...}" />
             <marker date="1472858890000" expanded="false" signature="3325:4145" ph="{...}" />
           </folding>

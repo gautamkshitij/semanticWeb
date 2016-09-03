@@ -1,0 +1,1859 @@
+
+[
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Genetically_Modified_Organism	 Name:   genetically modified organism
+ TargetID:   http://dbpedia.org/resource/Genetically_modified_organism	 TargetName   genetically modified organism
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Social_Policy	 Name:   social policy
+ TargetID:   http://dbpedia.org/resource/Social_policy	 TargetName   social policy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Door-to-door	 Name:   door to door
+ TargetID:   http://dbpedia.org/resource/Door-to-door	 TargetName   door to door
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Gender_pay_gap	 Name:   gender pay gap
+ TargetID:   http://dbpedia.org/resource/Gender_pay_gap	 TargetName   gender pay gap
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Inflation	 Name:   inflation
+ TargetID:   http://dbpedia.org/resource/Inflation	 TargetName   inflation
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Investment	 Name:   investment
+ TargetID:   http://dbpedia.org/resource/Investment	 TargetName   investment
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Jean-Claude_Juncker	 Name:   jean claude juncker
+ TargetID:   http://dbpedia.org/resource/Jean-Claude_Juncker	 TargetName   jean claude juncker
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Oxfam	 Name:   oxfam
+ TargetID:   http://dbpedia.org/resource/Oxfam	 TargetName   oxfam
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Farm	 Name:   farm
+ TargetID:   http://dbpedia.org/resource/Farm	 TargetName   farm
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Technocracy	 Name:   technocracy
+ TargetID:   http://dbpedia.org/resource/Technocracy	 TargetName   technocracy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#House_of_Lords	 Name:   house of lords
+ TargetID:   http://dbpedia.org/resource/House_of_Lords	 TargetName   house of lords
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Ofsted	 Name:   ofsted
+ TargetID:   http://dbpedia.org/resource/Ofsted	 TargetName   ofsted
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Crime	 Name:   crime
+ TargetID:   http://dbpedia.org/resource/Crime	 TargetName   crime
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Purchasing_power	 Name:   purchasing power
+ TargetID:   http://dbpedia.org/resource/Purchasing_power	 TargetName   purchasing power
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#farmer	 Name:   farmer
+ TargetID:   http://dbpedia.org/resource/Farmer	 TargetName   farmer
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Campaign_for_an_Independent_Britain	 Name:   campaign for an independent britain
+ TargetID:   http://dbpedia.org/resource/Campaign_for_an_Independent_Britain	 TargetName   campaign for an independent britain
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Heckler	 Name:   heckler
+ TargetID:   http://dbpedia.org/resource/Heckler	 TargetName   heckler
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Protest	 Name:   protest
+ TargetID:   http://dbpedia.org/resource/Protest	 TargetName   protest
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Central_Bank	 Name:   european central bank
+ TargetID:   http://dbpedia.org/resource/European_Central_Bank	 TargetName   european central bank
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Boycott	 Name:   boycott
+ TargetID:   http://dbpedia.org/resource/Boycott	 TargetName   boycott
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Right_of_asylum	 Name:   right of asylum
+ TargetID:   http://dbpedia.org/resource/Right_of_asylum	 TargetName   right of asylum
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Christian_Political_Movement	 Name:   european christian political movement
+ TargetID:   http://dbpedia.org/resource/European_Christian_Political_Movement	 TargetName   european christian political movement
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Institute_of_Economic_Affairs	 Name:   institute of economic affairs
+ TargetID:   http://dbpedia.org/resource/Institute_of_Economic_Affairs	 TargetName   institute of economic affairs
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Lord	 Name:   lord
+ TargetID:   http://dbpedia.org/resource/Lord	 TargetName   lord
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Italy	 Name:   italy
+ TargetID:   http://dbpedia.org/resource/Italy	 TargetName   italy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#UNISON	 Name:   unison
+ TargetID:   http://dbpedia.org/resource/UNISON	 TargetName   unison
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Poverty	 Name:   poverty
+ TargetID:   http://dbpedia.org/resource/Poverty	 TargetName   poverty
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Human_rights	 Name:   human rights
+ TargetID:   http://dbpedia.org/resource/Human_rights	 TargetName   human rights
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Police	 Name:   police
+ TargetID:   http://dbpedia.org/resource/Police	 TargetName   police
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#François_Hollande	 Name:   françois hollande
+ TargetID:   http://dbpedia.org/resource/François_Hollande	 TargetName   françois hollande
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Alex_Salmond	 Name:   alex salmond
+ TargetID:   http://dbpedia.org/resource/Alex_Salmond	 TargetName   alex salmond
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Royal_Navy	 Name:   royal navy
+ TargetID:   http://dbpedia.org/resource/Royal_Navy	 TargetName   royal navy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Corruption	 Name:   corruption
+ TargetID:   http://dbpedia.org/resource/Corruption	 TargetName   corruption
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Maastricht_Treaty	 Name:   maastricht treaty
+ TargetID:   http://dbpedia.org/resource/Maastricht_Treaty	 TargetName   maastricht treaty
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Council	 Name:   european council
+ TargetID:   http://dbpedia.org/resource/European_Council	 TargetName   european council
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_People's_Party	 Name:   european people's party
+ TargetID:   http://dbpedia.org/resource/European_People's_Party	 TargetName   european people's party
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Unemployment	 Name:   unemployment
+ TargetID:   http://dbpedia.org/resource/Unemployment	 TargetName   unemployment
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Economic_and_Financial_Affairs_Council	 Name:   economic and financial affairs council
+ TargetID:   http://dbpedia.org/resource/Economic_and_Financial_Affairs_Council	 TargetName   economic and financial affairs council
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Sustainable_development	 Name:   sustainable development
+ TargetID:   http://dbpedia.org/resource/Sustainable_development	 TargetName   sustainable development
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Business	 Name:   business
+ TargetID:   http://dbpedia.org/resource/Business	 TargetName   business
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Hospital	 Name:   hospital
+ TargetID:   http://dbpedia.org/resource/Hospital	 TargetName   hospital
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Security	 Name:   security
+ TargetID:   http://dbpedia.org/resource/Security	 TargetName   security
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Racism	 Name:   racism
+ TargetID:   http://dbpedia.org/resource/Racism	 TargetName   racism
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Ukraine	 Name:   ukraine
+ TargetID:   http://dbpedia.org/resource/Ukraine	 TargetName   ukraine
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Bill_of_Rights	 Name:   bill of rights
+ TargetID:   http://dbpedia.org/resource/Bill_of_rights	 TargetName   bill of rights
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Chancellor	 Name:   chancellor
+ TargetID:   http://dbpedia.org/resource/Chancellor	 TargetName   chancellor
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Culture	 Name:   culture
+ TargetID:   http://dbpedia.org/resource/Culture	 TargetName   culture
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Ofcom	 Name:   ofcom
+ TargetID:   http://dbpedia.org/resource/Ofcom	 TargetName   ofcom
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#european_convention_on_human_rights	 Name:   european convention on human rights
+ TargetID:   http://dbpedia.org/resource/European_Convention_on_Human_Rights	 TargetName   european convention on human rights
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#National_Union_of_Rail,_Maritime_and_Transport_Workers	 Name:   national union of rail maritime and transport workers
+ TargetID:   http://dbpedia.org/resource/National_Union_of_Rail,_Maritime_and_Transport_Workers	 TargetName   national union of rail maritime and transport workers
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Tariff	 Name:   tariff
+ TargetID:   http://dbpedia.org/resource/Tariff	 TargetName   tariff
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Austerity	 Name:   austerity
+ TargetID:   http://dbpedia.org/resource/Austerity	 TargetName   austerity
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Energy	 Name:   energy
+ TargetID:   http://dbpedia.org/resource/Energy	 TargetName   energy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Scottish_Parliament	 Name:   scottish parliament
+ TargetID:   http://dbpedia.org/resource/Scottish_Parliament	 TargetName   scottish parliament
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Home_office	 Name:   home office
+ TargetID:   http://dbpedia.org/resource/Home_Office	 TargetName   home office
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Buycott	 Name:   buycott
+ TargetID:   http://dbpedia.org/resource/Buycott	 TargetName   buycott
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Immigration	 Name:   immigration
+ TargetID:   http://dbpedia.org/resource/Immigration	 TargetName   immigration
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Education_Policy	 Name:   education policy
+ TargetID:   http://dbpedia.org/resource/Education_policy	 TargetName   education policy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#University_and_College_Union	 Name:   university and college union
+ TargetID:   http://dbpedia.org/resource/University_and_College_Union	 TargetName   university and college union
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Minimum_wage	 Name:   minimum wage
+ TargetID:   http://dbpedia.org/resource/Minimum_wage	 TargetName   minimum wage
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Quarantine	 Name:   quarantine
+ TargetID:   http://dbpedia.org/resource/Quarantine	 TargetName   quarantine
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Conservatives_and_Reformists	 Name:   european conservatives and reformists
+ TargetID:   http://dbpedia.org/resource/European_Conservatives_and_Reformists	 TargetName   european conservatives and reformists
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Committee_of_the_Regions	 Name:   committee of the regions
+ TargetID:   http://dbpedia.org/resource/Committee_of_the_Regions	 TargetName   committee of the regions
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Infrastructure	 Name:   infrastructure
+ TargetID:   http://dbpedia.org/resource/Infrastructure	 TargetName   infrastructure
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Milk_quota	 Name:   milk quota
+ TargetID:   http://dbpedia.org/resource/Milk_quota	 TargetName   milk quota
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Food_safety	 Name:   food safety
+ TargetID:   http://dbpedia.org/resource/Food_safety	 TargetName   food safety
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Public_Administration	 Name:   public administration
+ TargetID:   http://dbpedia.org/resource/Public_administration	 TargetName   public administration
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Terrorism	 Name:   terrorism
+ TargetID:   http://dbpedia.org/resource/Terrorism	 TargetName   terrorism
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#British_Army	 Name:   british army
+ TargetID:   http://dbpedia.org/resource/British_Army	 TargetName   british army
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Schengen_Agreement	 Name:   schengen agreement
+ TargetID:   http://dbpedia.org/resource/Schengen_Agreement	 TargetName   schengen agreement
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Lifelong_learning	 Name:   lifelong learning
+ TargetID:   http://dbpedia.org/resource/Lifelong_learning	 TargetName   lifelong learning
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#President_of_the_European_Commission	 Name:   president of the european commission
+ TargetID:   http://dbpedia.org/resource/President_of_the_European_Commission	 TargetName   president of the european commission
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Peace	 Name:   peace
+ TargetID:   http://dbpedia.org/resource/Peace	 TargetName   peace
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Northern_Ireland_Assembly	 Name:   northern ireland assembly
+ TargetID:   http://dbpedia.org/resource/Northern_Ireland_Assembly	 TargetName   northern ireland assembly
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Germany	 Name:   germany
+ TargetID:   http://dbpedia.org/resource/Germany	 TargetName   germany
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Entrepreneurship	 Name:   entrepreneurship
+ TargetID:   http://dbpedia.org/resource/Entrepreneurship	 TargetName   entrepreneurship
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Multiculturalism	 Name:   multiculturalism
+ TargetID:   http://dbpedia.org/resource/Multiculturalism	 TargetName   multiculturalism
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Patrol	 Name:   patrol
+ TargetID:   http://dbpedia.org/resource/Patrol	 TargetName   patrol
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#United_Kingdom	 Name:   united kingdom
+ TargetID:   http://dbpedia.org/resource/United_Kingdom	 TargetName   united kingdom
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#riot	 Name:   riot
+ TargetID:   http://dbpedia.org/resource/Riot	 TargetName   riot
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Union_of_Construction,_Allied_Trades_and_Technicians	 Name:   union of construction allied trades and technicians
+ TargetID:   http://dbpedia.org/resource/Union_of_Construction,_Allied_Trades_and_Technicians	 TargetName   union of construction allied trades and technicians
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Trade_Union_Confederation	 Name:   european trade union confederation
+ TargetID:   http://dbpedia.org/resource/European_Trade_Union_Confederation	 TargetName   european trade union confederation
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#National_Union_of_Teachers	 Name:   national union of teachers
+ TargetID:   http://dbpedia.org/resource/National_Union_of_Teachers	 TargetName   national union of teachers
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Voting	 Name:   voting
+ TargetID:   http://dbpedia.org/resource/Voting	 TargetName   voting
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#President_of_the_European_Council	 Name:   president of the european council
+ TargetID:   http://dbpedia.org/resource/President_of_the_European_Council	 TargetName   president of the european council
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Prison	 Name:   prison
+ TargetID:   http://dbpedia.org/resource/Prison	 TargetName   prison
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Research	 Name:   research
+ TargetID:   http://dbpedia.org/resource/Research	 TargetName   research
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Transport_Salaried_Staffs'_Association	 Name:   transport salaried staffs' association
+ TargetID:   http://dbpedia.org/resource/Transport_Salaried_Staffs'_Association	 TargetName   transport salaried staffs' association
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#High_Representative_of_the_Union_for_Foreign_Affairs_and_Security_Policy	 Name:   high representative of the union for foreign affairs and security policy
+ TargetID:   http://dbpedia.org/resource/High_Representative_of_the_Union_for_Foreign_Affairs_and_Security_Policy	 TargetName   high representative of the union for foreign affairs and security policy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#10_Downing_Street	 Name:   10 downing street
+ TargetID:   http://dbpedia.org/resource/10_Downing_Street	 TargetName   10 downing street
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Social_policy	 Name:   social policy
+ TargetID:   http://dbpedia.org/resource/Social_policy	 TargetName   social policy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Government	 Name:   government
+ TargetID:   http://dbpedia.org/resource/Government	 TargetName   government
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Deputy_Prime_Minister	 Name:   deputy prime minister
+ TargetID:   http://dbpedia.org/resource/Deputy_prime_minister	 TargetName   deputy prime minister
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Gender_equality	 Name:   gender equality
+ TargetID:   http://dbpedia.org/resource/Gender_equality	 TargetName   gender equality
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Pension	 Name:   pension
+ TargetID:   http://dbpedia.org/resource/Pension	 TargetName   pension
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Copyright	 Name:   copyright
+ TargetID:   http://dbpedia.org/resource/Copyright	 TargetName   copyright
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#First_Minister_of_Wales	 Name:   first minister of wales
+ TargetID:   http://dbpedia.org/resource/First_Minister_of_Wales	 TargetName   first minister of wales
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Trade_union	 Name:   trade union
+ TargetID:   http://dbpedia.org/resource/Trade_union	 TargetName   trade union
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Monopoly	 Name:   monopoly
+ TargetID:   http://dbpedia.org/resource/Monopoly	 TargetName   monopoly
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Invasion	 Name:   invasion
+ TargetID:   http://dbpedia.org/resource/Invasion	 TargetName   invasion
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Court_of_Human_Rights	 Name:   european court of human rights
+ TargetID:   http://dbpedia.org/resource/European_Court_of_Human_Rights	 TargetName   european court of human rights
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Party_of_the_European_Left	 Name:   party of the european left
+ TargetID:   http://dbpedia.org/resource/Party_of_the_European_Left	 TargetName   party of the european left
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Debate	 Name:   debate
+ TargetID:   http://dbpedia.org/resource/Debate	 TargetName   debate
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Homophobia	 Name:   homophobia
+ TargetID:   http://dbpedia.org/resource/Homophobia	 TargetName   homophobia
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Prime_Minister	 Name:   prime minister
+ TargetID:   http://dbpedia.org/resource/Prime_minister	 TargetName   prime minister
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#José_Bové	 Name:   josé bové
+ TargetID:   http://dbpedia.org/resource/José_Bové	 TargetName   josé bové
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Stability_and_Growth_Pact	 Name:   stability and growth pact
+ TargetID:   http://dbpedia.org/resource/Stability_and_Growth_Pact	 TargetName   stability and growth pact
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#President_of_the_European_Parliament	 Name:   president of the european parliament
+ TargetID:   http://dbpedia.org/resource/President_of_the_European_Parliament	 TargetName   president of the european parliament
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Piracy	 Name:   piracy
+ TargetID:   http://dbpedia.org/resource/Piracy	 TargetName   piracy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Party_of_European_Socialists	 Name:   party of european socialists
+ TargetID:   http://dbpedia.org/resource/Party_of_European_Socialists	 TargetName   party of european socialists
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Archbishop_of_Canterbury	 Name:   archbishop of canterbury
+ TargetID:   http://dbpedia.org/resource/Archbishop_of_Canterbury	 TargetName   archbishop of canterbury
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Alliance_of_Liberals_and_Democrats_for_Europe	 Name:   alliance of liberals and democrats for europe
+ TargetID:   http://dbpedia.org/resource/Alliance_of_Liberals_and_Democrats_for_Europe	 TargetName   alliance of liberals and democrats for europe
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Civil_society	 Name:   civil society
+ TargetID:   http://dbpedia.org/resource/Civil_society	 TargetName   civil society
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Privatization	 Name:   privatization
+ TargetID:   http://dbpedia.org/resource/Privatization	 TargetName   privatization
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Greenhouse_gas	 Name:   greenhouse gas
+ TargetID:   http://dbpedia.org/resource/Greenhouse_gas	 TargetName   greenhouse gas
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Foreign_policy	 Name:   foreign policy
+ TargetID:   http://dbpedia.org/resource/Foreign_policy	 TargetName   foreign policy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Alternative_energy	 Name:   alternative energy
+ TargetID:   http://dbpedia.org/resource/Alternative_energy	 TargetName   alternative energy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#TaxPayers'_Alliance	 Name:   taxpayers' alliance
+ TargetID:   http://dbpedia.org/resource/TaxPayers'_Alliance	 TargetName   taxpayers' alliance
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Canvassing	 Name:   canvassing
+ TargetID:   http://dbpedia.org/resource/Canvassing	 TargetName   canvassing
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Tax	 Name:   tax
+ TargetID:   http://dbpedia.org/resource/Tax	 TargetName   tax
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Parliament	 Name:   european parliament
+ TargetID:   http://dbpedia.org/resource/European_Parliament	 TargetName   european parliament
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Cost_of_living	 Name:   cost of living
+ TargetID:   http://dbpedia.org/resource/Cost_of_living	 TargetName   cost of living
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Eurocrat	 Name:   eurocrat
+ TargetID:   http://dbpedia.org/resource/Eurocrat	 TargetName   eurocrat
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Europe	 Name:   europe
+ TargetID:   http://dbpedia.org/resource/Europe	 TargetName   europe
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Avaaz	 Name:   avaaz
+ TargetID:   http://dbpedia.org/resource/Avaaz	 TargetName   avaaz
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#University	 Name:   university
+ TargetID:   http://dbpedia.org/resource/University	 TargetName   university
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Euroregion	 Name:   euroregion
+ TargetID:   http://dbpedia.org/resource/Euroregion	 TargetName   euroregion
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Medicine	 Name:   medicine
+ TargetID:   http://dbpedia.org/resource/Medicine	 TargetName   medicine
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Recession	 Name:   recession
+ TargetID:   http://dbpedia.org/resource/Recession	 TargetName   recession
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Greenhouse_effect	 Name:   greenhouse effect
+ TargetID:   http://dbpedia.org/resource/Greenhouse_effect	 TargetName   greenhouse effect
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#White_paper	 Name:   white paper
+ TargetID:   http://dbpedia.org/resource/White_paper	 TargetName   white paper
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#First_Minister_of_Scotland	 Name:   first minister of scotland
+ TargetID:   http://dbpedia.org/resource/First_Minister_of_Scotland	 TargetName   first minister of scotland
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Democratic_Party	 Name:   european democratic party
+ TargetID:   http://dbpedia.org/resource/European_Democratic_Party	 TargetName   european democratic party
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Matteo_Renzi	 Name:   matteo renzi
+ TargetID:   http://dbpedia.org/resource/Matteo_Renzi	 TargetName   matteo renzi
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Democratic_deficit	 Name:   democratic deficit
+ TargetID:   http://dbpedia.org/resource/Democratic_deficit	 TargetName   democratic deficit
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Budget	 Name:   budget
+ TargetID:   http://dbpedia.org/resource/Budget	 TargetName   budget
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Hansard	 Name:   hansard
+ TargetID:   http://dbpedia.org/resource/Hansard	 TargetName   hansard
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Guy_Verhofstadt	 Name:   guy verhofstadt
+ TargetID:   http://dbpedia.org/resource/Guy_Verhofstadt	 TargetName   guy verhofstadt
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Ska_Keller	 Name:   ska keller
+ TargetID:   http://dbpedia.org/resource/Ska_Keller	 TargetName   ska keller
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#MigrationWatch_UK	 Name:   migration watch uk
+ TargetID:   http://dbpedia.org/resource/MigrationWatch_UK	 TargetName   migration watch uk
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Carwyn_Jones	 Name:   carwyn jones
+ TargetID:   http://dbpedia.org/resource/Carwyn_Jones	 TargetName   carwyn jones
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Referendum	 Name:   referendum
+ TargetID:   http://dbpedia.org/resource/Referendum	 TargetName   referendum
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Chatham_House	 Name:   chatham house
+ TargetID:   http://dbpedia.org/resource/Chatham_House	 TargetName   chatham house
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#38_Degrees	 Name:   38 degrees
+ TargetID:   http://dbpedia.org/resource/38_Degrees	 TargetName   38 degrees
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Mayor	 Name:   mayor
+ TargetID:   http://dbpedia.org/resource/Mayor	 TargetName   mayor
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Social_Fund	 Name:   european social fund
+ TargetID:   http://dbpedia.org/resource/European_Social_Fund	 TargetName   european social fund
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Open_data	 Name:   open data
+ TargetID:   http://dbpedia.org/resource/Open_data	 TargetName   open data
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Employment	 Name:   employment
+ TargetID:   http://dbpedia.org/resource/Employment	 TargetName   employment
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Radical_Right	 Name:   radical right
+ TargetID:   http://dbpedia.org/resource/Radical_right	 TargetName   radical right
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#National_Secular_Society	 Name:   national secular society
+ TargetID:   http://dbpedia.org/resource/National_Secular_Society	 TargetName   national secular society
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#International_Monetary_Fund	 Name:   international monetary fund
+ TargetID:   http://dbpedia.org/resource/International_Monetary_Fund	 TargetName   international monetary fund
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Carbon_footprint	 Name:   carbon footprint
+ TargetID:   http://dbpedia.org/resource/Carbon_footprint	 TargetName   carbon footprint
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Business_for_New_Europe	 Name:   business for new europe
+ TargetID:   http://dbpedia.org/resource/Business_for_New_Europe	 TargetName   business for new europe
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#NASUWT	 Name:   nasuwt
+ TargetID:   http://dbpedia.org/resource/NASUWT	 TargetName   nasuwt
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Refugee	 Name:   refugee
+ TargetID:   http://dbpedia.org/resource/Refugee	 TargetName   refugee
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Green_economy	 Name:   green economy
+ TargetID:   http://dbpedia.org/resource/Green_economy	 TargetName   green economy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Crimea	 Name:   crimea
+ TargetID:   http://dbpedia.org/resource/Crimea	 TargetName   crimea
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Public_and_Commercial_Services_Union	 Name:   public and commercial services union
+ TargetID:   http://dbpedia.org/resource/Public_and_Commercial_Services_Union	 TargetName   public and commercial services union
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Alexis_Tsipras	 Name:   alexis tsipras
+ TargetID:   http://dbpedia.org/resource/Alexis_Tsipras	 TargetName   alexis tsipras
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Queen	 Name:   queen
+ TargetID:   http://dbpedia.org/resource/Queen	 TargetName   queen
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Unite_the_Union	 Name:   unite the union
+ TargetID:   http://dbpedia.org/resource/Unite_the_Union	 TargetName   unite the union
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Free_trade	 Name:   free trade
+ TargetID:   http://dbpedia.org/resource/Free_trade	 TargetName   free trade
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#War	 Name:   war
+ TargetID:   http://dbpedia.org/resource/War	 TargetName   war
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Populism	 Name:   populism
+ TargetID:   http://dbpedia.org/resource/Populism	 TargetName   populism
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#School	 Name:   school
+ TargetID:   http://dbpedia.org/resource/School	 TargetName   school
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Renewable_energy	 Name:   renewable energy
+ TargetID:   http://dbpedia.org/resource/Renewable_energy	 TargetName   renewable energy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Press_Complaints_Commission	 Name:   press complaints commission
+ TargetID:   http://dbpedia.org/resource/Press_Complaints_Commission	 TargetName   press complaints commission
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Scottish_National_Party	 Name:   scottish national party
+ TargetID:   http://dbpedia.org/resource/Scottish_National_Party	 TargetName   scottish national party
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Agricultural_Policy	 Name:   agricultural policy
+ TargetID:   http://dbpedia.org/resource/Agricultural_policy	 TargetName   agricultural policy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Antonis_Samaras	 Name:   antonis samaras
+ TargetID:   http://dbpedia.org/resource/Antonis_Samaras	 TargetName   antonis samaras
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Constitution	 Name:   constitution
+ TargetID:   http://dbpedia.org/resource/Constitution	 TargetName   constitution
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Teacher	 Name:   teacher
+ TargetID:   http://dbpedia.org/resource/Teacher	 TargetName   teacher
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Parliament	 Name:   parliament
+ TargetID:   http://dbpedia.org/resource/Parliament	 TargetName   parliament
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Union_Military_Committee	 Name:   european union military committee
+ TargetID:   http://dbpedia.org/resource/European_Union_Military_Committee	 TargetName   european union military committee
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Economic_Policy	 Name:   economic policy
+ TargetID:   http://dbpedia.org/resource/Economic_policy	 TargetName   economic policy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Mario_Draghi	 Name:   mario draghi
+ TargetID:   http://dbpedia.org/resource/Mario_Draghi	 TargetName   mario draghi
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Justice	 Name:   justice
+ TargetID:   http://dbpedia.org/resource/Justice	 TargetName   justice
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Commission	 Name:   european commission
+ TargetID:   http://dbpedia.org/resource/European_Commission	 TargetName   european commission
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#National_Assembly_for_Wales	 Name:   national assembly for wales
+ TargetID:   http://dbpedia.org/resource/National_Assembly_for_Wales	 TargetName   national assembly for wales
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Petition	 Name:   petition
+ TargetID:   http://dbpedia.org/resource/Petition	 TargetName   petition
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Economic_growth	 Name:   economic growth
+ TargetID:   http://dbpedia.org/resource/Economic_growth	 TargetName   economic growth
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Soldier	 Name:   soldier
+ TargetID:   http://dbpedia.org/resource/Soldier	 TargetName   soldier
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Institute_For_Fiscal_Studies	 Name:   institute for fiscal studies
+ TargetID:   http://dbpedia.org/resource/Institute_for_Fiscal_Studies	 TargetName   institute for fiscal studies
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Unlock_Democracy	 Name:   unlock democracy
+ TargetID:   http://dbpedia.org/resource/Unlock_Democracy	 TargetName   unlock democracy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Welfare	 Name:   welfare
+ TargetID:   http://dbpedia.org/resource/Welfare	 TargetName   welfare
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Health	 Name:   health
+ TargetID:   http://dbpedia.org/resource/Health	 TargetName   health
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Free_Alliance	 Name:   european free alliance
+ TargetID:   http://dbpedia.org/resource/European_Free_Alliance	 TargetName   european free alliance
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Party_Leader	 Name:   party leader
+ TargetID:   http://dbpedia.org/resource/Party_leader	 TargetName   party leader
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Climate_change	 Name:   climate change
+ TargetID:   http://dbpedia.org/resource/Climate_change	 TargetName   climate change
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Bank_of_England	 Name:   bank of england
+ TargetID:   http://dbpedia.org/resource/Bank_of_England	 TargetName   bank of england
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#High-speed_rail	 Name:   high speed rail
+ TargetID:   http://dbpedia.org/resource/High-speed_rail	 TargetName   high speed rail
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Common_Agricultural_Policy	 Name:   common agricultural policy
+ TargetID:   http://dbpedia.org/resource/Common_Agricultural_Policy	 TargetName   common agricultural policy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Judiciary	 Name:   judiciary
+ TargetID:   http://dbpedia.org/resource/Judiciary	 TargetName   judiciary
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Christian_Institute	 Name:   christian institute
+ TargetID:   http://dbpedia.org/resource/Christian_Institute	 TargetName   christian institute
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Royal_Air_Force	 Name:   royal air force
+ TargetID:   http://dbpedia.org/resource/Royal_Air_Force	 TargetName   royal air force
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Neoliberalism	 Name:   neoliberalism
+ TargetID:   http://dbpedia.org/resource/Neoliberalism	 TargetName   neoliberalism
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Tax_evasion	 Name:   tax evasion
+ TargetID:   http://dbpedia.org/resource/Tax_evasion	 TargetName   tax evasion
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Court_of_Justice	 Name:   european court of justice
+ TargetID:   http://dbpedia.org/resource/European_Court_of_Justice	 TargetName   european court of justice
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Fire_Brigades_Union	 Name:   fire brigades union
+ TargetID:   http://dbpedia.org/resource/Fire_Brigades_Union	 TargetName   fire brigades union
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Civil_disobedience	 Name:   civil disobedience
+ TargetID:   http://dbpedia.org/resource/Civil_disobedience	 TargetName   civil disobedience
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Student	 Name:   student
+ TargetID:   http://dbpedia.org/resource/Student	 TargetName   student
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Treaty	 Name:   treaty
+ TargetID:   http://dbpedia.org/resource/Treaty	 TargetName   treaty
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Trades_Union_Congress	 Name:   trades union congress
+ TargetID:   http://dbpedia.org/resource/Trades_Union_Congress	 TargetName   trades union congress
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Jean-Marie_Le_Pen	 Name:   jean marie le pen
+ TargetID:   http://dbpedia.org/resource/Jean-Marie_Le_Pen	 TargetName   jean marie le pen
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#International_trade	 Name:   international trade
+ TargetID:   http://dbpedia.org/resource/International_trade	 TargetName   international trade
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Economic_Interest_Grouping	 Name:   european economic interest grouping
+ TargetID:   http://dbpedia.org/resource/European_economic_interest_grouping	 TargetName   european economic interest grouping
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Transport	 Name:   transport
+ TargetID:   http://dbpedia.org/resource/Transport	 TargetName   transport
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Stop_the_War_Coalition	 Name:   stop the war coalition
+ TargetID:   http://dbpedia.org/resource/Stop_the_War_Coalition	 TargetName   stop the war coalition
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Sustainability	 Name:   sustainability
+ TargetID:   http://dbpedia.org/resource/Sustainability	 TargetName   sustainability
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Trial	 Name:   trial
+ TargetID:   http://dbpedia.org/resource/Trial	 TargetName   trial
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Equal_opportunity	 Name:   equal opportunity
+ TargetID:   http://dbpedia.org/resource/Equal_opportunity	 TargetName   equal opportunity
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Europe_of_Freedom_and_Democracy	 Name:   europe of freedom and democracy
+ TargetID:   http://dbpedia.org/resource/Europe_of_Freedom_and_Democracy	 TargetName   europe of freedom and democracy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Ombudsman	 Name:   european ombudsman
+ TargetID:   http://dbpedia.org/resource/European_Ombudsman	 TargetName   european ombudsman
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Glass_ceiling	 Name:   glass ceiling
+ TargetID:   http://dbpedia.org/resource/Glass_ceiling	 TargetName   glass ceiling
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Nordic_Green_Left_Alliance	 Name:   nordic green left alliance
+ TargetID:   http://dbpedia.org/resource/Nordic_Green_Left_Alliance	 TargetName   nordic green left alliance
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Open_Europe	 Name:   open europe
+ TargetID:   http://dbpedia.org/resource/Open_Europe	 TargetName   open europe
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Green_Party	 Name:   european green party
+ TargetID:   http://dbpedia.org/resource/European_Green_Party	 TargetName   european green party
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Union_of_Shop,_Distributive_and_Allied_Workers	 Name:   union of shop distributive and allied workers
+ TargetID:   http://dbpedia.org/resource/Union_of_Shop,_Distributive_and_Allied_Workers	 TargetName   union of shop distributive and allied workers
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Policy_Exchange	 Name:   policy exchange
+ TargetID:   http://dbpedia.org/resource/Policy_Exchange	 TargetName   policy exchange
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Abstentionism	 Name:   abstentionism
+ TargetID:   http://dbpedia.org/resource/Abstentionism	 TargetName   abstentionism
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Entrepreneur	 Name:   entrepreneur
+ TargetID:   http://dbpedia.org/resource/Entrepreneur	 TargetName   entrepreneur
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Westminster	 Name:   westminster
+ TargetID:   http://dbpedia.org/resource/Westminster	 TargetName   westminster
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Fabian_Society	 Name:   fabian society
+ TargetID:   http://dbpedia.org/resource/Fabian_Society	 TargetName   fabian society
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Same_sex_marriage	 Name:   same sex marriage
+ TargetID:   http://dbpedia.org/resource/Same-sex_marriage	 TargetName   same sex marriage
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Common_Security_and_Defence_Policy	 Name:   common security and defence policy
+ TargetID:   http://dbpedia.org/resource/Common_Security_and_Defence_Policy	 TargetName   common security and defence policy
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Confederation_of_British_Industry	 Name:   confederation of british industry
+ TargetID:   http://dbpedia.org/resource/Confederation_of_British_Industry	 TargetName   confederation of british industry
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Kyoto_protocol	 Name:   kyoto protocol
+ TargetID:   http://dbpedia.org/resource/Kyoto_Protocol	 TargetName   kyoto protocol
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Mark_Carney	 Name:   mark carney
+ TargetID:   http://dbpedia.org/resource/Mark_Carney	 TargetName   mark carney
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Bank	 Name:   bank
+ TargetID:   http://dbpedia.org/resource/Bank	 TargetName   bank
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#International_Court_of_Justice	 Name:   international court of justice
+ TargetID:   http://dbpedia.org/resource/International_Court_of_Justice	 TargetName   international court of justice
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Head_of_State	 Name:   head of state
+ TargetID:   http://dbpedia.org/resource/Head_of_state	 TargetName   head of state
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Digital_divide	 Name:   digital divide
+ TargetID:   http://dbpedia.org/resource/Digital_divide	 TargetName   digital divide
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Geert_Wilders	 Name:   geert wilders
+ TargetID:   http://dbpedia.org/resource/Geert_Wilders	 TargetName   geert wilders
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Association_of_Teachers_and_Lecturers	 Name:   association of teachers and lecturers
+ TargetID:   http://dbpedia.org/resource/Association_of_Teachers_and_Lecturers	 TargetName   association of teachers and lecturers
+ Similarity:   1.0	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Healthcare	 Name:   healthcare
+ TargetID:   http://dbpedia.org/resource/Health_care	 TargetName   health care
+ Similarity:   0.9743	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Childcare	 Name:   childcare
+ TargetID:   http://dbpedia.org/resource/Child_care	 TargetName   child care
+ Similarity:   0.9716	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Establishment	 Name:   establishment
+ TargetID:   http://dbpedia.org/resource/The_Establishment	 TargetName   the establishment
+ Similarity:   0.9	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Pan-European_corridor	 Name:   pan european corridor
+ TargetID:   http://dbpedia.org/resource/Pan-European_corridors	 TargetName   pan european corridors
+ Similarity:   0.8874	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Digital_natives	 Name:   digital natives
+ TargetID:   http://dbpedia.org/resource/Digital_native	 TargetName   digital native
+ Similarity:   0.8814	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Politcal_union	 Name:   politcal union
+ TargetID:   http://dbpedia.org/resource/Political_union	 TargetName   political union
+ Similarity:   0.8814	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Sit-down_strike	 Name:   sit down strike
+ TargetID:   http://dbpedia.org/resource/Sitdown_strike	 TargetName   sitdown strike
+ Similarity:   0.8783	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Eurogroup	 Name:   eurogroup
+ TargetID:   http://dbpedia.org/resource/Euro_Group	 TargetName   euro group
+ Similarity:   0.8716	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Communication_Workers_Union	 Name:   communication workers union
+ TargetID:   http://dbpedia.org/resource/Communication_Workers_Union_(UK)	 TargetName   communication workers union (uk)
+ Similarity:   0.8542	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Left-Libertarian	 Name:   left libertarian
+ TargetID:   http://dbpedia.org/resource/Left-libertarianism	 TargetName   left libertarianism
+ Similarity:   0.8537	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Policy_Network_UK	 Name:   policy network uk
+ TargetID:   http://dbpedia.org/resource/Policy_Network	 TargetName   policy network
+ Similarity:   0.8477	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Liberal_Democratic	 Name:   liberal democratic
+ TargetID:   http://dbpedia.org/resource/Liberal_Democrats	 TargetName   liberal democrats
+ Similarity:   0.8449	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Christian-Democrat_&_Conservative	 Name:   christian democrat conservative
+ TargetID:   http://dbpedia.org/resource/Political_groups_of_the_European_Parliament#Christian_Democrats.2FConservatives	 TargetName   christian democrats 2fconservatives
+ Similarity:   0.8447	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Friends_of_the_Earth	 Name:   friends of the earth
+ TargetID:   http://dbpedia.org/resource/Friends_of_the_Earth_(HK)	 TargetName   friends of the earth (hk)
+ Similarity:   0.84	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Greenpeace_UK	 Name:   greenpeace uk
+ TargetID:   http://dbpedia.org/resource/Greenpeace	 TargetName   greenpeace
+ Similarity:   0.8296	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Whistle-Stop_Tour	 Name:   whistle stop tour
+ TargetID:   http://dbpedia.org/resource/Whistle_stop_train_tour	 TargetName   whistle stop train tour
+ Similarity:   0.819	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Mariano_Rajoy_Brey	 Name:   mariano rajoy brey
+ TargetID:   http://dbpedia.org/resource/Mariano_Rajoy	 TargetName   mariano rajoy
+ Similarity:   0.8129	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Angela_Dorothea_Merkel	 Name:   angela dorothea merkel
+ TargetID:   http://dbpedia.org/resource/Angela_Merkel	 TargetName   angela merkel
+ Similarity:   0.8123	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Labour_party	 Name:   labour party
+ TargetID:   http://dbpedia.org/resource/Labour_Party_(UK)	 TargetName   labour party (uk)
+ Similarity:   0.8069	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Nigel_Paul_Farage	 Name:   nigel paul farage
+ TargetID:   http://dbpedia.org/resource/Nigel_Farage	 TargetName   nigel farage
+ Similarity:   0.8069	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_law	 Name:   european law
+ TargetID:   http://dbpedia.org/resource/European_Union_law	 TargetName   european union law
+ Similarity:   0.792	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#John_Fredrik_Reinfeldt	 Name:   john fredrik reinfeldt
+ TargetID:   http://dbpedia.org/resource/Fredrik_Reinfeldt	 TargetName   fredrik reinfeldt
+ Similarity:   0.7846	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Catherine_Margaret_Ashton	 Name:   catherine margaret ashton
+ TargetID:   http://dbpedia.org/resource/Catherine_Ashton	 TargetName   catherine ashton
+ Similarity:   0.7815	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Lobby	 Name:   lobby
+ TargetID:   http://dbpedia.org/resource/Lobbying	 TargetName   lobbying
+ Similarity:   0.7754	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#National_Union_of_Students	 Name:   national union of students
+ TargetID:   http://dbpedia.org/resource/National_Union_of_Students_(United_Kingdom)	 TargetName   national union of students (united kingdom)
+ Similarity:   0.767	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#European_Foundation	 Name:   european foundation
+ TargetID:   http://dbpedia.org/resource/European_Foundation_(think_tank)	 TargetName   european foundation (think tank)
+ Similarity:   0.7624	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Euroskeptic	 Name:   euroskeptic
+ TargetID:   http://dbpedia.org/resource/Euroscepticism	 TargetName   euroscepticism
+ Similarity:   0.7604	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#revolt	 Name:   revolt
+ TargetID:   http://dbpedia.org/resource/Revolution	 TargetName   revolution
+ Similarity:   0.7409	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Press_conference	 Name:   press conference
+ TargetID:   http://dbpedia.org/resource/News_conference	 TargetName   news conference
+ Similarity:   0.7376	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Sanction	 Name:   sanction
+ TargetID:   http://dbpedia.org/resource/Sanctions_(law)	 TargetName   sanctions (law)
+ Similarity:   0.7357	 Relation:   =
+
+
++, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Conservative	 Name:   conservative
+ TargetID:   http://dbpedia.org/resource/Conservative_Party_(UK)	 TargetName   conservative party (uk)
+ Similarity:   0.7303	 Relation:   =
+
+
++]
+Precision	Recall	F-measure	Found	Correct	Reference
+93.6%		78.4%	85.3%		283		265		338

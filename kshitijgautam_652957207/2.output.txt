@@ -1,0 +1,13 @@
+Classes: 0
+Individuals: 1127
+Properties: 2
+Direct Relationships: 23
+Running transitive closure on RelationshipMap
+Transitive closure finished in 0 seconds
+Extended Relationships: 31
+Disjoints: 0
+Finished!
+Running Instance Matcher
+Finished in 29 seconds
+Precision	Recall	F-measure	Found	Correct	Reference
+90.6%		82.8%	86.6%		309		280		338

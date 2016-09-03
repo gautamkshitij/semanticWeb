@@ -1,0 +1,130 @@
+
+[
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Genetically_Modified_Organism	 Name:   genetically modified organism
+ TargetID:   http://dbpedia.org/resource/Genetically-modified_organism	 TargetName   genetically modified organism
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Green_Party	 Name:   green party
+ TargetID:   http://dbpedia.org/resource/Green_party	 TargetName   green party
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#UNISON	 Name:   unison
+ TargetID:   http://dbpedia.org/resource/Unison	 TargetName   unison
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Single_market	 Name:   single market
+ TargetID:   http://dbpedia.org/resource/Single_market	 TargetName   single market
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Home_office	 Name:   home office
+ TargetID:   http://dbpedia.org/resource/Small_office/home_office	 TargetName   home office
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Foreign_policy	 Name:   foreign policy
+ TargetID:   http://dbpedia.org/resource/Foreign_Policy	 TargetName   foreign policy
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Army	 Name:   army
+ TargetID:   http://dbpedia.org/resource/Army	 TargetName   army
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Green	 Name:   green
+ TargetID:   http://dbpedia.org/resource/Green	 TargetName   green
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Education	 Name:   education
+ TargetID:   http://dbpedia.org/resource/Education	 TargetName   education
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Agriculture	 Name:   agriculture
+ TargetID:   http://dbpedia.org/resource/Agriculture	 TargetName   agriculture
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Tax_evasion	 Name:   tax evasion
+ TargetID:   http://dbpedia.org/resource/Tax_Evasion	 TargetName   tax evasion
+ Similarity:   1.0	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Criminal	 Name:   criminal
+ TargetID:   http://dbpedia.org/resource/Criminal_law	 TargetName   criminal law
+ Similarity:   0.892	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Income	 Name:   income
+ TargetID:   http://dbpedia.org/resource/Income_tax	 TargetName   income tax
+ Similarity:   0.865	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Court	 Name:   court
+ TargetID:   http://dbpedia.org/resource/Courthouse	 TargetName   courthouse
+ Similarity:   0.82	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Competition	 Name:   competition
+ TargetID:   http://dbpedia.org/resource/Competition_law	 TargetName   competition law
+ Similarity:   0.8169	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#Secretary	 Name:   secretary
+ TargetID:   http://dbpedia.org/resource/Home_Secretary	 TargetName   home secretary
+ Similarity:   0.8043	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#House_of_Commons	 Name:   house of commons
+ TargetID:   http://dbpedia.org/resource/House_of_Commons_of_Canada	 TargetName   house of commons of canada
+ Similarity:   0.7714	 Relation:   =
+
+
+-, 
+
+ SourceID:   http://big.csr.unibo.it/sabine-eng.owl#emissions	 Name:   emissions
+ TargetID:   http://dbpedia.org/resource/Emissions_trading	 TargetName   emissions trading
+ Similarity:   0.7338	 Relation:   =
+
+
+-]
+Precision	Recall	F-measure	Found	Correct	Reference
+93.6%		78.4%	85.3%		283		265		338

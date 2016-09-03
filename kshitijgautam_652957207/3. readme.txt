@@ -1,0 +1,15 @@
+How to Run
+
+1. Add MyMatcher.java to the aml package. that’s it.
+
+—> I have commented that code which was printing 
+—> change path of source,target and ref
+
+
+2. If it doesn’t run. You can download my repo from Github and load in IntelliJ
+—> Import in IntelliJ or Eclipse (as IntelliJ)
+
+Github: https://github.com/gautamkshitij/semanticWeb 
+
+
+Author: Kshitij Gautam
